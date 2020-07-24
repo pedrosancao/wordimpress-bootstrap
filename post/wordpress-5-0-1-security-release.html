@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <base href="https://pedrosancao.github.io/wordpress-static-generator/">
+        <title>Wordpress static site generator</title>
+    <link rel="icon" href="media/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+        <meta property="fb:app_id" content="" />
+</head>
+<body>
+    <div class="outer-container">
+            <header>
+    <h1 class="sr-only">Wordpress static site generator</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Wordpress static site generator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" ar1ia-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href=".">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/pedrosancao/wordpress-static-generator" target="_blank" rel="noreferrer noopener">View on GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <section class="single-post single-post-6498">
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-12 col-lg-9 posts">
+                <article>
+                    <h2>WordPress 5.0.1 Security Release</h2>
+                    
+                    <picture class="post-media">
+                        <img src="" alt="" loading="lazy">
+                    </picture>
+                    <div class="meta my-2">
+                        By Ian Dunn |
+                        Dec 13, 2018 |
+                        <a href="category/releases.html">
+                            Releases
+                        </a>
+                                            </div>
+                    <p>WordPress 5.0.1 is now available. This is a <strong>security release</strong> for all versions since WordPress 3.7. We strongly encourage you to update your sites immediately.</p>
+
+
+
+<p>Plugin authors are encouraged to <a href="https://make.wordpress.org/core/2018/12/13/backwards-compatibility-breaks-in-5-0-1/">read the 5.0.1 developer notes</a> for information on backwards-compatibility.</p>
+
+
+
+<p>WordPress versions 5.0 and earlier are affected by the following bugs, which are fixed in version 5.0.1. Updated versions of WordPress 4.9 and older releases are also available, for users who have not yet updated to 5.0.</p>
+
+
+
+<ul><li><a href="https://ripstech.com">Karim El Ouerghemmi</a> discovered that authors could alter meta data to delete files that they weren&#8217;t authorized to.</li><li>Simon Scannell of <a href="https://blog.ripstech.com">RIPS Technologies</a> discovered that authors could create posts of unauthorized post types with specially crafted input.</li><li><a href="https://twitter.com/_s_n_t">Sam Thomas</a> discovered that contributors could craft meta data in a way that resulted in PHP object injection. </li><li><a href="https://security-consulting.icu">Tim Coen</a> discovered that contributors could edit new comments from higher-privileged users, potentially leading to a cross-site scripting vulnerability.</li><li><a href="https://security-consulting.icu">Tim Coen</a> also discovered that specially crafted URL inputs could lead to a cross-site scripting vulnerability in some circumstances. WordPress itself was not affected, but plugins could be in some situations. </li><li><a href="https://yoast.com/">Team Yoast</a> discovered that the user activation screen could be indexed by search engines in some uncommon configurations, leading to exposure of email addresses, and in some rare cases, default generated passwords.</li><li><a href="https://security-consulting.icu">Tim Coen</a> and <a href="https://medium.com/websec">Slavco</a> discovered that authors on Apache-hosted sites could upload specifically crafted files that bypass MIME verification, leading to a cross-site scripting vulnerability. </li></ul>
+
+
+
+<p>Thank you to all of the reporters for <a href="https://make.wordpress.org/core/handbook/testing/reporting-security-vulnerabilities/">privately disclosing the vulnerabilities</a>, which gave us time to fix them before WordPress sites could be attacked.</p>
+
+
+
+<p><a href="https://wordpress.org/download/">Download WordPress 5.0.1</a>, or venture over to <code>Dashboard → Updates</code> and click <code>Update Now</code>. Sites that support automatic background updates are already beginning to update automatically.</p>
+
+
+
+<p>In addition to the security researchers mentioned above, thank you to everyone who contributed to WordPress 5.0.1:</p>
+
+
+
+<p><a href="https://profiles.wordpress.org/tellyworth">Alex Shiels</a>, <a href="https://profiles.wordpress.org/xknown">Alex Concha</a>, <a href="https://profiles.wordpress.org/atimmer">Anton Timmermans</a>, <a href="https://profiles.wordpress.org/azaozz">Andrew Ozz</a>, <a href="https://profiles.wordpress.org/aaroncampbell">Aaron Campbell</a>, <a href="https://profiles.wordpress.org/andreamiddleton">Andrea Middleton</a>, <a href="https://profiles.wordpress.org/vortfu">Ben Bidner</a>, <a href="https://profiles.wordpress.org/barry">Barry Abrahamson</a>, <a href="https://profiles.wordpress.org/chriscct7">Chris Christoff</a>, <a href="https://profiles.wordpress.org/darthhexx/">David Newman</a>, <a href="https://profiles.wordpress.org/apokalyptik">Demitrious Kelly</a>, <a href="https://profiles.wordpress.org/dd32">Dion Hulse</a>, <a href="https://profiles.wordpress.org/hnotess/">Hannah Notess</a>, <a href="https://profiles.wordpress.org/pento">Gary Pendergast</a>, <a href="https://profiles.wordpress.org/herregroen">Herre Groen</a>, <a href="https://profiles.wordpress.org/iandunn">Ian Dunn</a>, <a href="https://profiles.wordpress.org/jeremyfelt">Jeremy Felt</a>, <a href="https://profiles.wordpress.org/joemcgill">Joe McGill</a>, <a href="https://profiles.wordpress.org/johnjamesjacoby/">John James Jacoby</a>, <a href="https://profiles.wordpress.org/desrosj">Jonathan Desrosiers</a>, <a href="https://profiles.wordpress.org/chanthaboune">Josepha Haden</a>, <a href="https://profiles.wordpress.org/joostdevalk">Joost de Valk</a>, <a href="https://profiles.wordpress.org/batmoo/">Mo Jangda</a>, <a href="https://profiles.wordpress.org/nickdaugherty">Nick Daugherty</a>, <a href="https://profiles.wordpress.org/peterwilsoncc">Peter Wilson</a>, <a href="https://profiles.wordpress.org/swissspidy">Pascal Birchler</a>, <a href="https://profiles.wordpress.org/SergeyBiryukov">Sergey Biryukov</a>, and <a href="https://twitter.com/p_valentyn">Valentyn Pylypchuk</a>.</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-6498" class="share-twitter sd-button share-icon" href="https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-6498" class="share-facebook sd-button share-icon" href="https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon" href="https://wordpress.org/news/2018/12/wordpress-5-0-1-security-release/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div>
+                    <nav class="post-navigation">
+                                                                        <a href="post/wordcamp-us-2019-dates-announced.html" class="float-left" rel="prev">Previous post</a>
+                                                                        <a href="post/bebo.html" class="float-right" rel="next">Next post</a>
+                                            </nav>
+                </article>
+                            </div>
+            <div class="col-12 col-lg-3">
+                <div class="sidebar sticky-top pt-3">
+    <h4 class="title">Últimas matérias</h4>
+    <nav>
+                <a href="post/wordpress-5-5-beta-3.html" class="post-media">
+                        <p>WordPress 5.5 Beta 3</p>
+        </a>
+                <a href="post/wordpress-5-5-beta-2.html" class="post-media">
+                        <p>WordPress 5.5 Beta 2</p>
+        </a>
+                <a href="post/wordpress-5-5-beta-1.html" class="post-media">
+                        <p>WordPress 5.5 Beta 1</p>
+        </a>
+                <a href="post/the-month-in-wordpress-june-2020.html" class="post-media">
+                        <p>The Month in WordPress: June 2020</p>
+        </a>
+                <a href="post/wordpress-5-4-2-security-and-maintenance-release.html" class="post-media">
+                        <p>WordPress 5.4.2 Security and Maintenance Release</p>
+        </a>
+                <a href="post/equity-and-the-power-of-community.html" class="post-media">
+                        <p>Equity and the Power of Community</p>
+        </a>
+                <a href="post/the-month-in-wordpress-may-2020.html" class="post-media">
+                        <p>The Month in WordPress: May 2020</p>
+        </a>
+            </nav>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="bg-secondary text-white pt-4 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <nav class="nav flex-column">
+                    <a href="#" class="text-reset">Consectetuer.</a>
+                    <a href="#" class="text-reset">Aliquam tincidunt mauris.</a>
+                    <a href="#" class="text-reset">Vestibulum auctor.</a>
+                    <a href="#" class="text-reset">Nunc dignissim risus.</a>
+                    <a href="#" class="text-reset">Cras ornare.</a>
+                </nav>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <h5>Vivamus vestibulum ntulla nec ante</h5>
+                <nav class="nav flex-column">
+                    <a href="#" class="text-reset">Praesent placerat risus.</a>
+                    <a href="#" class="text-reset">Fusce pellentesque.</a>
+                    <a href="#" class="text-reset">Integer vitae libero ac risus.</a>
+                    <a href="#" class="text-reset">Vestibulum commodo felis.</a>
+                    <a href="#" class="text-reset">Ut aliquam.</a>
+                    <a href="#" class="text-reset">Cras iaculis.</a>
+                    <a href="#" class="text-reset">Donec quis dui at dolor.</a>
+                </nav>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <h5>Contact</h5>
+                <nav class="nav flex-column">
+                    <span>+00 (00)&nbsp;0000-0000</span>
+                    <a href="#" class="text-reset">pedrosancao@users.noreply.github.com</a>
+                </nav>
+            </div>
+        </div>
+        <p class="text-center copy">&copy Wordpress static site generator</p>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        </body>
+</html>

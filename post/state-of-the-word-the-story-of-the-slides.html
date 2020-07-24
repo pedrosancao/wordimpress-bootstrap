@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <base href="https://pedrosancao.github.io/wordpress-static-generator/">
+        <title>Wordpress static site generator</title>
+    <link rel="icon" href="media/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+        <meta property="fb:app_id" content="" />
+</head>
+<body>
+    <div class="outer-container">
+            <header>
+    <h1 class="sr-only">Wordpress static site generator</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Wordpress static site generator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" ar1ia-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href=".">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/pedrosancao/wordpress-static-generator" target="_blank" rel="noreferrer noopener">View on GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <section class="single-post single-post-8233">
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-12 col-lg-9 posts">
+                <article>
+                    <h2>State of the Word: the story of the slides</h2>
+                    
+                    <picture class="post-media">
+                        <img src="media/stateoftheword.webp" alt="stateoftheword" loading="lazy">
+                    </picture>
+                    <div class="meta my-2">
+                        By Ella van Durpe |
+                        Dec 17, 2019 |
+                        <a href="category/general.html">
+                            General
+                        </a>
+                                            </div>
+                    <p>During the State of the Word at WordCamp US 2019, Matt Mullenweg shared that Gutenberg was used to create his slides and the presentation was powered by the Slides plugin. Using WordPress to power a slide deck isn’t an obvious choice, so we wanted to showcase the process and give some tips for making slide layouts using Gutenberg.</p>
+
+
+
+<p><em>This post is co-written by Ella and <a href="https://profiles.wordpress.org/karmatosed/">Tammie</a>, who (along with <a href="https://profiles.wordpress.org/melchoyce/">Mel</a>, <a href="https://profiles.wordpress.org/mapk/">Mark</a>, <a href="https://profiles.wordpress.org/nrqsnchz/">Enrique</a>, <a href="https://profiles.wordpress.org/itsjonq/">Q</a></em> <em>and a cast of supporters) helped create this year’s State of the Word slide deck.</em></p>
+
+
+
+<h2>How it Started</h2>
+
+
+
+<p><a href="https://profiles.wordpress.org/ellatrix/">Ella Van Durpe</a> was selected to speak at <a href="https://www.youtube.com/watch?v=ZNWNhUPrqB4">JSConf</a> and ReactEurope and wanted slides for her presentation.&nbsp;</p>
+
+
+
+<p>In the past, she’d used Reveal.js to create slides and enjoyed the freedom to create anything using HTML, CSS and JavaScript. These languages were comfortable, familiar, and also can be published on the web in their native format.&nbsp;</p>
+
+
+
+<p>For these new presentations, she wanted to use Reveal.js again but didn’t feel like writing all the HTML by hand. Creating blocks of content visually, without having to actually write any code, which can be published natively to the web, is exactly what Gutenberg was built for.</p>
+
+
+
+<p>The plugin was prototyped quickly, with hardcoded styles on the slides and zero options. At the end of each presentation, Ella shared a brief demo of the Gutenberg-based slides and the audience was amazed.</p>
+
+
+
+<figure class="wp-block-embed-twitter wp-block-embed is-type-rich is-provider-twitter"><div class="wp-block-embed__wrapper">
+<blockquote class="twitter-tweet" data-width="550" data-dnt="true"><p lang="en" dir="ltr">.<a href="https://twitter.com/ellatrx?ref_src=twsrc%5Etfw">@ellatrx</a> any chance you might open source this? 🙂 <a href="https://t.co/6hygMpBqUA">https://t.co/6hygMpBqUA</a></p>&mdash; Pascal Birchler (@swissspidy) <a href="https://twitter.com/swissspidy/status/1131573525612048385?ref_src=twsrc%5Etfw">May 23, 2019</a></blockquote><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div></figure>
+
+
+
+<p>As WordCamp US approached, Ella suggested that her plugin be used for State of the Word. Since it was such a hit with her audience members, it seemed like this would be a great chance to share it with the WordPress community as a whole.</p>
+
+
+
+<!--more-->
+
+
+
+<h2>How it Works</h2>
+
+
+
+<h3>Technical information</h3>
+
+
+
+<p>The plugin registers a custom post type called “presentation” and a new “slide” block. The slide block is a sort of enhanced “Group” block, which is restricted to the root of the post, but you can put any other block inside it. As a result, you have a post filled with only slides at the root and slides filled with content. This maps perfectly to the Reveal.js markup, which requires content in HTML section elements.</p>
+
+
+
+<p>Since these slides each have their own design, the theme styles are disabled and styling is set from each slide. A custom presentation template is provided by the plugin to render the custom post on the front-end.</p>
+
+
+
+<p>Then Ella added options to style the slides. For example, she added options to control the slide background and font, at both the document level and individual slide level. She also added Reveal.js options, which allow you to change the transition style and speed. Lastly, she added a custom CSS field to allow style overwrites.</p>
+
+
+
+<p>For the State of the Word, she also added speaker notes and a speaker view.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1256" height="721" src="https://i0.wp.com/wordpress.org/news/files/2019/12/image.png?fit=632%2C363&amp;ssl=1" alt="" class="wp-image-8271" srcset="https://i2.wp.com/wordpress.org/news/files/2019/12/image.png?w=1256&amp;ssl=1 1256w, https://i2.wp.com/wordpress.org/news/files/2019/12/image.png?resize=300%2C172&amp;ssl=1 300w, https://i2.wp.com/wordpress.org/news/files/2019/12/image.png?resize=1024%2C588&amp;ssl=1 1024w, https://i2.wp.com/wordpress.org/news/files/2019/12/image.png?resize=768%2C441&amp;ssl=1 768w" /></figure>
+
+
+
+<h3>How it&#8217;s Designed</h3>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1114" height="908" src="https://i0.wp.com/wordpress.org/news/files/2019/12/01.png?fit=632%2C515&amp;ssl=1" alt="" class="wp-image-8262" srcset="https://i0.wp.com/wordpress.org/news/files/2019/12/01.png?w=1114&amp;ssl=1 1114w, https://i0.wp.com/wordpress.org/news/files/2019/12/01.png?resize=300%2C245&amp;ssl=1 300w, https://i0.wp.com/wordpress.org/news/files/2019/12/01.png?resize=1024%2C835&amp;ssl=1 1024w, https://i0.wp.com/wordpress.org/news/files/2019/12/01.png?resize=768%2C626&amp;ssl=1 768w" /></figure>
+
+
+
+<p>The inspiration for the slide designs came from Blue Note album covers (which were also the inspiration for the <a href="https://www.slideshare.net/photomatt/state-of-the-word-2011/">2011 State of the Word slides</a>). These album covers inspired the recent “About” page in WordPress core and the starter content for the new Twenty Twenty theme. This style consists of strong, geometric shapes and simple forms with clean lines. Photography and bold typography are at the heart of this look.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="3586" height="3072" src="https://i1.wp.com/wordpress.org/news/files/2019/12/image-17.png?fit=632%2C541&amp;ssl=1" alt="" class="wp-image-8267" srcset="https://i2.wp.com/wordpress.org/news/files/2019/12/image-17.png?w=3586&amp;ssl=1 3586w, https://i2.wp.com/wordpress.org/news/files/2019/12/image-17.png?resize=300%2C257&amp;ssl=1 300w, https://i2.wp.com/wordpress.org/news/files/2019/12/image-17.png?resize=1024%2C877&amp;ssl=1 1024w, https://i2.wp.com/wordpress.org/news/files/2019/12/image-17.png?resize=768%2C658&amp;ssl=1 768w, https://i2.wp.com/wordpress.org/news/files/2019/12/image-17.png?resize=1536%2C1316&amp;ssl=1 1536w, https://i2.wp.com/wordpress.org/news/files/2019/12/image-17.png?resize=2048%2C1754&amp;ssl=1 2048w, https://i2.wp.com/wordpress.org/news/files/2019/12/image-17.png?w=1264&amp;ssl=1 1264w, https://i2.wp.com/wordpress.org/news/files/2019/12/image-17.png?w=1896&amp;ssl=1 1896w" /></figure>
+
+
+
+<p>Various color palettes and font pairings were explored before selecting the best combination for the presentation.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1311" height="845" src="https://i0.wp.com/wordpress.org/news/files/2019/12/03.png?fit=632%2C407&amp;ssl=1" alt="" class="wp-image-8259" srcset="https://i0.wp.com/wordpress.org/news/files/2019/12/03.png?w=1311&amp;ssl=1 1311w, https://i0.wp.com/wordpress.org/news/files/2019/12/03.png?resize=300%2C193&amp;ssl=1 300w, https://i0.wp.com/wordpress.org/news/files/2019/12/03.png?resize=1024%2C660&amp;ssl=1 1024w, https://i0.wp.com/wordpress.org/news/files/2019/12/03.png?resize=768%2C495&amp;ssl=1 768w" /></figure>
+
+
+
+<p>A strong photographic element was needed for the slides. Past WordCamps are a great source of photos, so we dug through years of photo galleries to find just the right shots. With colors, fonts, and photos, we laid the foundation to build the deck.</p>
+
+
+
+<h2>Tips for Making Gutenberg Slides</h2>
+
+
+
+<h3>Tip One: columns are your friends</h3>
+
+
+
+<p>If you want slides with a precise layout, use columns. As you can see here, we used a 3 column layout to center content within a slide:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="632" height="354" src="https://i0.wp.com/wordpress.org/news/files/2019/12/3.png?resize=632%2C354&#038;ssl=1" alt="" class="wp-image-8260" srcset="https://i0.wp.com/wordpress.org/news/files/2019/12/3.png?w=874&amp;ssl=1 874w, https://i0.wp.com/wordpress.org/news/files/2019/12/3.png?resize=300%2C168&amp;ssl=1 300w, https://i0.wp.com/wordpress.org/news/files/2019/12/3.png?resize=768%2C431&amp;ssl=1 768w" data-recalc-dims="1" /></figure>
+
+
+
+<h3>Tip Two: spacer blocks are useful</h3>
+
+
+
+<p>Want to really unlock the power of columns? Combine them with the spacer block! We used spacer blocks to position content over background images, like in this slide:</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="632" height="360" src="https://i1.wp.com/wordpress.org/news/files/2019/12/6.png?resize=632%2C360&#038;ssl=1" alt="" class="wp-image-8264" srcset="https://i1.wp.com/wordpress.org/news/files/2019/12/6.png?w=865&amp;ssl=1 865w, https://i1.wp.com/wordpress.org/news/files/2019/12/6.png?resize=300%2C171&amp;ssl=1 300w, https://i1.wp.com/wordpress.org/news/files/2019/12/6.png?resize=768%2C438&amp;ssl=1 768w" data-recalc-dims="1" /></figure>
+
+
+
+<h3>Tip Three: test on large screens</h3>
+
+
+
+<p>It’s important to preview and test your slides as you go. Make sure to design for the size and aspect ratio of the projector you’ll be using and do a visual check in presentation mode from time to time.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" width="1096" height="703" src="https://i0.wp.com/wordpress.org/news/files/2019/12/notes.png?fit=632%2C405&amp;ssl=1" alt="" class="wp-image-8269" srcset="https://i1.wp.com/wordpress.org/news/files/2019/12/notes.png?w=1096&amp;ssl=1 1096w, https://i1.wp.com/wordpress.org/news/files/2019/12/notes.png?resize=300%2C192&amp;ssl=1 300w, https://i1.wp.com/wordpress.org/news/files/2019/12/notes.png?resize=1024%2C657&amp;ssl=1 1024w, https://i1.wp.com/wordpress.org/news/files/2019/12/notes.png?resize=768%2C493&amp;ssl=1 768w" /></figure>
+
+
+
+<h3>Tip Four: check your videos</h3>
+
+
+
+<p>A good demo video is integral to showcase new features. Joen Asmussen has a great post on <a href="https://automattic.design/2019/11/12/good-ui-demo-videos/">creating effective demo videos</a>.</p>
+
+
+
+<h2>Lessons learned</h2>
+
+
+
+<blockquote class="wp-block-quote"><p><em>I’d love to make the art directed compositions easier to create. </em></p><cite><em>Mel Choyce-Dwan</em></cite></blockquote>
+
+
+
+<p>As Gutenberg evolves, one big improvement is that art direction will get easier. Even with the improvements this year, creating some layouts in Gutenberg was trickier than expected. For the more complicated compositions, we relied on SVGs. Eventually, the need for hacks will dissolve away, and a new world of exciting possibilities will open for everyone.</p>
+
+
+
+<p>Browsers offered one of our biggest learnings in this presentation, more than they would if you use Keynote or Powerpoint, for example (tools most of us have used). Often, we found that what we created in the editor varied a when viewed full-screen. We were able to mitigate this by updating the plugin to use a fixed size, instead of using the entire browser window.</p>
+
+
+
+<h2>Wrapping it up</h2>
+
+
+
+<p>If you would like to check out the State of the Word, you can watch the <a href="https://wordpress.tv/2019/11/03/2019-state-of-the-word/">video</a> and read all about it in a <a href="https://ma.tt/2019/11/state-of-the-word-2019/">post</a>.</p>
+
+
+
+<p>The Slides plugin is not only available on the plugin repo, but you can also get the code from <a href="https://github.com/WordPress/slides">GitHub</a> and <a href="https://translate.wordpress.org/projects/wp-plugins/slide/">help translate</a>.</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-8233" class="share-twitter sd-button share-icon" href="https://wordpress.org/news/2019/12/state-of-the-word-the-story-of-the-slides/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-8233" class="share-facebook sd-button share-icon" href="https://wordpress.org/news/2019/12/state-of-the-word-the-story-of-the-slides/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon" href="https://wordpress.org/news/2019/12/state-of-the-word-the-story-of-the-slides/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div>
+                    <nav class="post-navigation">
+                                                                        <a href="post/wordpress-5-3-2-maintenance-release.html" class="float-left" rel="prev">Previous post</a>
+                                                                        <a href="post/wordpress-5-3-1-security-and-maintenance-release.html" class="float-right" rel="next">Next post</a>
+                                            </nav>
+                </article>
+                            </div>
+            <div class="col-12 col-lg-3">
+                <div class="sidebar sticky-top pt-3">
+    <h4 class="title">Últimas matérias</h4>
+    <nav>
+                <a href="post/wordpress-5-5-beta-3.html" class="post-media">
+                        <p>WordPress 5.5 Beta 3</p>
+        </a>
+                <a href="post/wordpress-5-5-beta-2.html" class="post-media">
+                        <p>WordPress 5.5 Beta 2</p>
+        </a>
+                <a href="post/wordpress-5-5-beta-1.html" class="post-media">
+                        <p>WordPress 5.5 Beta 1</p>
+        </a>
+                <a href="post/the-month-in-wordpress-june-2020.html" class="post-media">
+                        <p>The Month in WordPress: June 2020</p>
+        </a>
+                <a href="post/wordpress-5-4-2-security-and-maintenance-release.html" class="post-media">
+                        <p>WordPress 5.4.2 Security and Maintenance Release</p>
+        </a>
+                <a href="post/equity-and-the-power-of-community.html" class="post-media">
+                        <p>Equity and the Power of Community</p>
+        </a>
+                <a href="post/the-month-in-wordpress-may-2020.html" class="post-media">
+                        <p>The Month in WordPress: May 2020</p>
+        </a>
+            </nav>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="bg-secondary text-white pt-4 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <nav class="nav flex-column">
+                    <a href="#" class="text-reset">Consectetuer.</a>
+                    <a href="#" class="text-reset">Aliquam tincidunt mauris.</a>
+                    <a href="#" class="text-reset">Vestibulum auctor.</a>
+                    <a href="#" class="text-reset">Nunc dignissim risus.</a>
+                    <a href="#" class="text-reset">Cras ornare.</a>
+                </nav>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <h5>Vivamus vestibulum ntulla nec ante</h5>
+                <nav class="nav flex-column">
+                    <a href="#" class="text-reset">Praesent placerat risus.</a>
+                    <a href="#" class="text-reset">Fusce pellentesque.</a>
+                    <a href="#" class="text-reset">Integer vitae libero ac risus.</a>
+                    <a href="#" class="text-reset">Vestibulum commodo felis.</a>
+                    <a href="#" class="text-reset">Ut aliquam.</a>
+                    <a href="#" class="text-reset">Cras iaculis.</a>
+                    <a href="#" class="text-reset">Donec quis dui at dolor.</a>
+                </nav>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <h5>Contact</h5>
+                <nav class="nav flex-column">
+                    <span>+00 (00)&nbsp;0000-0000</span>
+                    <a href="#" class="text-reset">pedrosancao@users.noreply.github.com</a>
+                </nav>
+            </div>
+        </div>
+        <p class="text-center copy">&copy Wordpress static site generator</p>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        </body>
+</html>

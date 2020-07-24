@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <base href="https://pedrosancao.github.io/wordpress-static-generator/">
+        <title>Wordpress static site generator</title>
+    <link rel="icon" href="media/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+        <meta property="fb:app_id" content="" />
+</head>
+<body>
+    <div class="outer-container">
+            <header>
+    <h1 class="sr-only">Wordpress static site generator</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Wordpress static site generator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" ar1ia-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href=".">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/pedrosancao/wordpress-static-generator" target="_blank" rel="noreferrer noopener">View on GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <section class="single-post single-post-8203">
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-12 col-lg-9 posts">
+                <article>
+                    <h2>WordPress 5.3.1 Security and Maintenance Release</h2>
+                    
+                    <picture class="post-media">
+                        <img src="" alt="" loading="lazy">
+                    </picture>
+                    <div class="meta my-2">
+                        By Jb Audras |
+                        Dec 13, 2019 |
+                        <a href="category/releases.html">
+                            Releases
+                        </a>
+                                            </div>
+                    <p>WordPress 5.3.1 is now available!</p>
+
+
+
+<p>This security and maintenance release features 46 fixes and enhancements. Plus, it adds a number of security fixes—see the list below.</p>
+
+
+
+<p>WordPress 5.3.1 is a short-cycle maintenance release. The next major release will be version 5.4.</p>
+
+
+
+<p>You can download WordPress 5.3.1 by clicking the button at the top of this page, or visit your<strong>&nbsp;Dashboard → Updates</strong>&nbsp;and click&nbsp;<strong>Update Now</strong>.</p>
+
+
+
+<p>If you have sites that support automatic background updates, they’ve already started the update process.</p>
+
+
+
+<h2>Security updates</h2>
+
+
+
+<p>Four security issues affect WordPress versions 5.3 and earlier; version 5.3.1 fixes them, so you’ll want to upgrade. If you haven’t yet updated to 5.3, there are also updated versions of 5.2 and earlier that fix the security issues.</p>
+
+
+
+<ul><li>Props to <a href="https://danielbachhuber.com/">Daniel Bachhuber</a> for finding an issue where an unprivileged user could make a post sticky via the REST API.</li><li>Props to <a href="https://blog.ripstech.com/authors/simon-scannell">Simon Scannell of RIPS Technologies</a> for finding and disclosing an issue where cross-site scripting (XSS) could be stored in well-crafted links.</li><li>Props to the <a rel="noreferrer noopener" target="_blank" href="https://wordpress.org/">WordPress.org</a> Security Team for hardening <code>wp_kses_bad_protocol()</code> to ensure that it is aware of the named colon attribute.</li><li>Props to <a href="https://twitter.com/ducnt_">Nguyen The Duc</a> for discovering a stored XSS vulnerability using block editor content.</li></ul>
+
+
+
+<h2>Maintenance updates</h2>
+
+
+
+<p>Here are a few of the highlights:</p>
+
+
+
+<ul><li>Administration: improvements to admin form controls height and alignment standardization (see related <a href="https://make.wordpress.org/core/2019/12/11/admin-form-controls-height-and-alignment-standardization-in-wordpress-5-3-1/">dev note</a>), dashboard widget links accessibility and alternate color scheme readability issues (see related <a href="https://make.wordpress.org/core/2019/12/10/alternate-color-schemes-changes-in-wordpress-5-3-1/">dev note</a>).</li><li>Block editor: fix Edge scrolling issues and intermittent JavaScript issues.</li><li>Bundled themes: add customizer option to show/hide author bio, replace JS based smooth scroll with CSS (see related <a href="https://make.wordpress.org/core/2019/12/08/twenty-twenty-animated-scroll-changes-in-wordpress-5-3-1/">dev note</a>) and fix Instagram embed CSS.</li><li>Date/time: improve non-GMT dates calculation, fix date format output in specific languages and make&nbsp;<code>get_permalink()</code>&nbsp;more resilient against PHP timezone changes.</li><li>Embeds: remove CollegeHumor oEmbed provider as the service doesn&#8217;t exist anymore.</li><li>External libraries: update <code>sodium_compat</code>.</li><li>Site health: allow the remind interval for the admin email verification to be filtered.</li><li>Uploads: avoid thumbnails overwriting other uploads when filename matches, and exclude PNG images from scaling after upload.</li><li>Users: ensure administration email verification uses the user&#8217;s locale instead of the site locale.</li></ul>
+
+
+
+<p>For more information, <a href="https://core.trac.wordpress.org/query?status=closed&amp;resolution=fixed&amp;milestone=5.3.1&amp;order=priority">browse the full list of changes on Trac</a> or check out the&nbsp;<a href="https://wordpress.org/support/wordpress-version/version-5-3-1/">version 5.3.1 HelpHub documentation page</a>.</p>
+
+
+
+<h2>Thanks!</h2>
+
+
+
+<p>In addition to the security researchers mentioned above, thank you to everyone who contributed to WordPress 5.3.1:</p>
+
+
+
+<p><a href="https://profiles.wordpress.org/123host/">123host</a>, <a href="https://profiles.wordpress.org/acosmin/">acosmin</a>, <a href="https://profiles.wordpress.org/adamsilverstein/">Adam Silverstein</a>, <a href="https://profiles.wordpress.org/aljullu/">Albert Juhé Lluveras</a>, <a href="https://profiles.wordpress.org/xknown/">Alex Concha</a>, <a href="https://profiles.wordpress.org/viper007bond/">Alex Mills</a>, <a href="https://profiles.wordpress.org/anantajitjg/">Anantajit JG</a>, <a href="https://profiles.wordpress.org/anlino/">Anders Norén</a>, <a href="https://profiles.wordpress.org/andraganescu/">andraganescu</a>, <a href="https://profiles.wordpress.org/afercia/">Andrea Fercia</a>, <a href="https://profiles.wordpress.org/aduth/">Andrew Duthie</a>, <a href="https://profiles.wordpress.org/azaozz/">Andrew Ozz</a>, <a href="https://profiles.wordpress.org/rarst/">Andrey &#8220;Rarst&#8221; Savchenko</a>, <a href="https://profiles.wordpress.org/aravindajith/">aravindajith</a>, <a href="https://profiles.wordpress.org/archon810/">archon810</a>, <a href="https://profiles.wordpress.org/ate-up-with-motor/">Ate Up With Motor</a>, <a href="https://profiles.wordpress.org/ayeshrajans/">Ayesh Karunaratne</a>, <a href="https://profiles.wordpress.org/birgire/">Birgir Erlendsson (birgire)</a>, <a href="https://profiles.wordpress.org/boga86/">Boga86</a>, <a href="https://profiles.wordpress.org/boonebgorges/">Boone Gorges</a>, <a href="https://profiles.wordpress.org/poena/">Carolina Nymark</a>, <a href="https://profiles.wordpress.org/chetan200891/">Chetan Prajapati</a>, <a href="https://profiles.wordpress.org/littlebigthing/">Csaba (LittleBigThings)</a>, <a href="https://profiles.wordpress.org/xendo/">Dademaru</a>, <a href="https://profiles.wordpress.org/danielbachhuber/">Daniel Bachhuber</a>, <a href="https://profiles.wordpress.org/mte90/">Daniele Scasciafratte</a>, <a href="https://profiles.wordpress.org/talldanwp/">Daniel Richards</a>, <a href="https://profiles.wordpress.org/davidbaumwald/">David Baumwald</a>, <a href="https://profiles.wordpress.org/dlh/">David Herrera</a>, <a href="https://profiles.wordpress.org/dd32/">Dion hulse</a>, <a href="https://profiles.wordpress.org/ehtis/">ehtis</a>, <a href="https://profiles.wordpress.org/ellatrix/">Ella van Durpe</a>, <a href="https://profiles.wordpress.org/epiqueras/">epiqueras</a>, <a href="https://profiles.wordpress.org/fabifott/">Fabian</a>, <a href="https://profiles.wordpress.org/flixos90/">Felix Arntz</a>, <a href="https://profiles.wordpress.org/flaviozavan/">flaviozavan</a>, <a href="https://profiles.wordpress.org/garrett-eclipse/">Garrett Hyder</a>, <a href="https://profiles.wordpress.org/hometowntrailers/">Glenn</a>, <a href="https://profiles.wordpress.org/gziolo/">Grzegorz (Greg) Ziółkowski</a>, <a href="https://profiles.wordpress.org/grzegorzjanoszka/">Grzegorz.Janoszka</a>, <a href="https://profiles.wordpress.org/hareesh-pillai/">Hareesh Pillai</a>, <a href="https://profiles.wordpress.org/ianbelanger/">Ian Belanger</a>, <a href="https://profiles.wordpress.org/ispreview/">ispreview</a>, <a href="https://profiles.wordpress.org/whyisjake/">Jake Spurlock</a>, <a href="https://profiles.wordpress.org/macmanx/">James Huff</a>, <a href="https://profiles.wordpress.org/jameskoster/">James Koster</a>, <a href="https://profiles.wordpress.org/jarretc/">Jarret</a>, <a href="https://profiles.wordpress.org/studiotwee/">Jasper van der Meer</a>, <a href="https://profiles.wordpress.org/audrasjb/">Jb Audras</a>, <a href="https://profiles.wordpress.org/jeichorn/">jeichorn</a>, <a href="https://profiles.wordpress.org/jeremyclarke/">Jer Clarke</a>, <a href="https://profiles.wordpress.org/jeremyfelt/">Jeremy Felt</a>, <a href="https://profiles.wordpress.org/jipmoors/">Jip Moors</a>, <a href="https://profiles.wordpress.org/joehoyle/">Joe Hoyle</a>, <a href="https://profiles.wordpress.org/johnjamesjacoby/">John James Jacoby</a>, <a href="https://profiles.wordpress.org/desrosj/">Jonathan Desrosiers</a>, <a href="https://profiles.wordpress.org/spacedmonkey/">Jonny Harris</a>, <a href="https://profiles.wordpress.org/joostdevalk/">Joost de Valk</a>, <a href="https://profiles.wordpress.org/jorgefilipecosta/">Jorge Costa</a>, <a href="https://profiles.wordpress.org/joyously/">Joy</a>, <a href="https://profiles.wordpress.org/jrf/">Juliette Reinders Folmer</a>, <a href="https://profiles.wordpress.org/justdaiv/">justdaiv</a>, <a href="https://profiles.wordpress.org/ryelle/">Kelly Dwan</a>, <a href="https://profiles.wordpress.org/kharisblank/">Kharis Sulistiyono</a>, <a href="https://profiles.wordpress.org/ixkaito/">Kite</a>, <a href="https://profiles.wordpress.org/kyliesabra/">kyliesabra</a>, <a href="https://profiles.wordpress.org/lisota/">lisota</a>, <a href="https://profiles.wordpress.org/lukaswaudentio/">lukaswaudentio</a>, <a href="https://profiles.wordpress.org/maciejmackowiak/">Maciej Mackowiak</a>, <a href="https://profiles.wordpress.org/marcelo2605/">marcelo2605</a>, <a href="https://profiles.wordpress.org/clorith/">Marius L. J.</a>, <a href="https://profiles.wordpress.org/mat-lipe/">Mat Lipe</a>, <a href="https://profiles.wordpress.org/mayanksonawat/">mayanksonawat</a>, <a href="https://profiles.wordpress.org/melchoyce/">Mel Choyce-Dwan</a>, <a href="https://profiles.wordpress.org/michael-arestad/">Michael Arestad</a>, <a href="https://profiles.wordpress.org/miette49/">miette49</a>, <a href="https://profiles.wordpress.org/mcsf/">Miguel Fonseca</a>, <a href="https://profiles.wordpress.org/mihdan/">mihdan</a>, <a href="https://profiles.wordpress.org/mauteri/">Mike Auteri</a>, <a href="https://profiles.wordpress.org/msaari/">Mikko Saari</a>, <a href="https://profiles.wordpress.org/gdragon/">Milan Petrovic</a>, <a href="https://profiles.wordpress.org/mukesh27/">Mukesh Panchal</a>, <a href="https://profiles.wordpress.org/nextscripts/">NextScripts</a>, <a href="https://profiles.wordpress.org/nickdaugherty/">Nick Daugherty</a>, <a href="https://profiles.wordpress.org/nielslange/">Niels Lange</a>, <a href="https://profiles.wordpress.org/noyle/">noyle</a>, <a href="https://profiles.wordpress.org/ov3rfly/">Ov3rfly</a>, <a href="https://profiles.wordpress.org/paragoninitiativeenterprises/">Paragon Initiative Enterprises</a>, <a href="https://profiles.wordpress.org/pbiron/">Paul Biron</a>, <a href="https://profiles.wordpress.org/peterwilsoncc/">Peter Wilson</a>, <a href="https://profiles.wordpress.org/larrach/">Rachel Peter</a>, <a href="https://profiles.wordpress.org/youknowriad/">Riad Benguella</a>, <a href="https://profiles.wordpress.org/quicoto/">Ricard Torres</a>, <a href="https://profiles.wordpress.org/murgroland/">Roland Murg</a>, <a href="https://profiles.wordpress.org/rmccue/">Ryan McCue</a>, <a href="https://profiles.wordpress.org/welcher/">Ryan Welcher</a>, <a href="https://profiles.wordpress.org/samuelfernandez/">SamuelFernandez</a>, <a href="https://profiles.wordpress.org/sathyapulse/">sathyapulse</a>, <a href="https://profiles.wordpress.org/wonderboymusic/">Scott Taylor</a>, <a href="https://profiles.wordpress.org/scvleon/">scvleon</a>, <a href="https://profiles.wordpress.org/sergeybiryukov/">Sergey Biryukov</a>, <a href="https://profiles.wordpress.org/sergiomdgomes/">sergiomdgomes</a>, <a href="https://profiles.wordpress.org/sgr33n/">SGr33n</a>, <a href="https://profiles.wordpress.org/simonjanin/">simonjanin</a>, <a href="https://profiles.wordpress.org/smerriman/">smerriman</a>, <a href="https://profiles.wordpress.org/steevithak/">steevithak</a>, <a href="https://profiles.wordpress.org/sabernhardt/">Stephen Bernhardt</a>, <a href="https://profiles.wordpress.org/netweb/">Stephen Edgar</a>, <a href="https://profiles.wordpress.org/dufresnesteven/">Steve Dufresne</a>, <a href="https://profiles.wordpress.org/subratamal/">Subrata Mal</a>, <a href="https://profiles.wordpress.org/manikmist09/">Sultan Nasir Uddin</a>, <a href="https://profiles.wordpress.org/cybr/">Sybre Waaijer</a>, <a href="https://profiles.wordpress.org/karmatosed/">Tammie Lister</a>, <a href="https://profiles.wordpress.org/tanvirul/">Tanvirul Haque</a>, <a href="https://profiles.wordpress.org/tellyworth/">Tellyworth</a>, <a href="https://profiles.wordpress.org/timon33/">timon33</a>, <a href="https://profiles.wordpress.org/timothyblynjacobs/">Timothy Jacobs</a>, <a href="https://profiles.wordpress.org/spaceshipone/">Timothée Brosille</a>, <a href="https://profiles.wordpress.org/tmatsuur/">tmatsuur</a>, <a href="https://profiles.wordpress.org/dinhtungdu/">Tung Du</a>, <a href="https://profiles.wordpress.org/veminom/">Veminom</a>, <a href="https://profiles.wordpress.org/vortfu/">vortfu</a>, <a href="https://profiles.wordpress.org/waleedt93/">waleedt93</a>, <a href="https://profiles.wordpress.org/williampatton/">williampatton</a>, <a href="https://profiles.wordpress.org/wpgurudev/">wpgurudev</a>, and <a href="https://profiles.wordpress.org/tollmanz/">Zack Tollman</a>.</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-8203" class="share-twitter sd-button share-icon" href="https://wordpress.org/news/2019/12/wordpress-5-3-1-security-and-maintenance-release/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-8203" class="share-facebook sd-button share-icon" href="https://wordpress.org/news/2019/12/wordpress-5-3-1-security-and-maintenance-release/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon" href="https://wordpress.org/news/2019/12/wordpress-5-3-1-security-and-maintenance-release/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div>
+                    <nav class="post-navigation">
+                                                                        <a href="post/state-of-the-word-the-story-of-the-slides.html" class="float-left" rel="prev">Previous post</a>
+                                                                        <a href="post/people-of-wordpress-jill-binder.html" class="float-right" rel="next">Next post</a>
+                                            </nav>
+                </article>
+                            </div>
+            <div class="col-12 col-lg-3">
+                <div class="sidebar sticky-top pt-3">
+    <h4 class="title">Últimas matérias</h4>
+    <nav>
+                <a href="post/wordpress-5-5-beta-3.html" class="post-media">
+                        <p>WordPress 5.5 Beta 3</p>
+        </a>
+                <a href="post/wordpress-5-5-beta-2.html" class="post-media">
+                        <p>WordPress 5.5 Beta 2</p>
+        </a>
+                <a href="post/wordpress-5-5-beta-1.html" class="post-media">
+                        <p>WordPress 5.5 Beta 1</p>
+        </a>
+                <a href="post/the-month-in-wordpress-june-2020.html" class="post-media">
+                        <p>The Month in WordPress: June 2020</p>
+        </a>
+                <a href="post/wordpress-5-4-2-security-and-maintenance-release.html" class="post-media">
+                        <p>WordPress 5.4.2 Security and Maintenance Release</p>
+        </a>
+                <a href="post/equity-and-the-power-of-community.html" class="post-media">
+                        <p>Equity and the Power of Community</p>
+        </a>
+                <a href="post/the-month-in-wordpress-may-2020.html" class="post-media">
+                        <p>The Month in WordPress: May 2020</p>
+        </a>
+            </nav>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="bg-secondary text-white pt-4 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <nav class="nav flex-column">
+                    <a href="#" class="text-reset">Consectetuer.</a>
+                    <a href="#" class="text-reset">Aliquam tincidunt mauris.</a>
+                    <a href="#" class="text-reset">Vestibulum auctor.</a>
+                    <a href="#" class="text-reset">Nunc dignissim risus.</a>
+                    <a href="#" class="text-reset">Cras ornare.</a>
+                </nav>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <h5>Vivamus vestibulum ntulla nec ante</h5>
+                <nav class="nav flex-column">
+                    <a href="#" class="text-reset">Praesent placerat risus.</a>
+                    <a href="#" class="text-reset">Fusce pellentesque.</a>
+                    <a href="#" class="text-reset">Integer vitae libero ac risus.</a>
+                    <a href="#" class="text-reset">Vestibulum commodo felis.</a>
+                    <a href="#" class="text-reset">Ut aliquam.</a>
+                    <a href="#" class="text-reset">Cras iaculis.</a>
+                    <a href="#" class="text-reset">Donec quis dui at dolor.</a>
+                </nav>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <h5>Contact</h5>
+                <nav class="nav flex-column">
+                    <span>+00 (00)&nbsp;0000-0000</span>
+                    <a href="#" class="text-reset">pedrosancao@users.noreply.github.com</a>
+                </nav>
+            </div>
+        </div>
+        <p class="text-center copy">&copy Wordpress static site generator</p>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        </body>
+</html>

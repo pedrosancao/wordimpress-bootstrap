@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <base href="https://pedrosancao.github.io/wordpress-static-generator/">
+        <title>Wordpress static site generator</title>
+    <link rel="icon" href="media/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+        <meta property="fb:app_id" content="" />
+</head>
+<body>
+    <div class="outer-container">
+            <header>
+    <h1 class="sr-only">Wordpress static site generator</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Wordpress static site generator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" ar1ia-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href=".">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/pedrosancao/wordpress-static-generator" target="_blank" rel="noreferrer noopener">View on GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+    <section class="single-post single-post-6589">
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-12 col-lg-9 posts">
+                <article>
+                    <h2>WordPress 5.1 &#8220;Betty&#8221;</h2>
+                    
+                    <picture class="post-media">
+                        <img src="media/site-health.webp" alt="" loading="lazy">
+                    </picture>
+                    <div class="meta my-2">
+                        By Matt Mullenweg |
+                        Feb 21, 2019 |
+                        <a href="category/releases.html">
+                            Releases
+                        </a>
+                                            </div>
+                    <div style="height:5px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 style="text-align:center">A Little Better Every Day</h2>
+
+
+
+<figure class="wp-block-image"><img src="media/update.webp" alt="" /></figure>
+
+
+
+<p>Version 5.1 of WordPress, named &#8220;Betty&#8221; in honour of acclaimed jazz vocalist Betty Carter, is available for download or update in your WordPress dashboard.</p>
+
+
+
+<p>Following <a href="https://wordpress.org/news/2018/12/bebo/">WordPress 5.0</a> — a major release which introduced the new block editor — 5.1 focuses on polish, in particular by improving the overall performance of the editor. In addition, this release paves the way for a better, faster, and more secure WordPress with some essential tools for site administrators and developers.</p>
+
+
+
+<div style="height:5px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 style="text-align:left">Site Health</h2>
+
+
+
+<div class="wp-block-image inline-svg"><figure class="alignright is-resized"><img loading="lazy" src="media/site-health.webp" alt="" width="191" height="168" /></figure></div>
+
+
+
+<p>With security and speed in mind, this release introduces WordPress’s first <a href="https://make.wordpress.org/core/2019/01/14/php-site-health-mechanisms-in-5-1/">Site Health</a> features. WordPress will start showing notices to administrators of sites that run long-outdated versions of PHP, which is the programming language that powers WordPress.</p>
+
+
+
+<p>When you install new plugins, WordPress&#8217;s Site Health features will check them against the version of PHP you&#8217;re running. If the plugin requires a version that won’t work with your site, WordPress will keep you from installing that plugin.</p>
+
+
+
+<div style="height:5px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 style="text-align:left">Editor Performance</h2>
+
+
+
+<div class="wp-block-image"><figure class="alignright is-resized"><img loading="lazy" src="media/editor-performance.webp" alt="" width="182" height="182" /></figure></div>
+
+
+
+<p>Introduced in WordPress 5.0, the new block editor continues to improve. Most significantly, WordPress 5.1 includes solid performance improvements within the editor. The editor should feel a little quicker to start, and typing should feel smoother. </p>
+
+
+
+<p>Expect more performance improvements in the next couple of releases.</p>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<h2 style="text-align:left">Developer Happiness</h2>
+
+
+
+<h3><a href="https://make.wordpress.org/core/2019/01/28/multisite-support-for-site-metadata-in-5-1/">Multisite Metadata</a></h3>
+
+
+
+<p>5.1 introduces a new database table to store metadata associated with sites and allows for the storage of arbitrary site data relevant in a multisite / network context.</p>
+
+
+
+<h3><a href="https://make.wordpress.org/core/2019/01/23/cron-api-changes-in-wordpress-5-1/">Cron API</a></h3>
+
+
+
+<p>The Cron API has been updated with new functions to assist with returning data and includes new filters for modifying cron storage. Other changes in behavior affect cron spawning on servers running FastCGI and PHP-FPM versions 7.0.16 and above.</p>
+
+
+
+<h3><a href="https://make.wordpress.org/core/2018/05/16/preparing-wordpress-for-a-javascript-future-part-1-build-step-and-folder-reorganization/">New JS Build Processes</a></h3>
+
+
+
+<p>WordPress 5.1 features a new JavaScript build option, following the large reorganisation of code that started in the 5.0 release.</p>
+
+
+
+<h3><a href="https://make.wordpress.org/core/2019/01/23/miscellaneous-developer-focused-changes-in-5-1/">Other Developer Goodness</a></h3>
+
+
+
+<p>Miscellaneous improvements include:</p>
+
+
+
+<ul><li>Updates to values for the <code>WP_DEBUG_LOG</code> constant</li><li>New test config file constant in the test suite, new plugin action hooks </li><li>Short-circuit filters for  <code>wp_unique_post_slug()</code>, <code>WP_User_Query</code>, and <code>count_users()</code></li><li>A new <code>human_readable_duration</code> function</li><li>Improved taxonomy metabox sanitization</li><li>Limited <code>LIKE</code> support for meta keys when using <code>WP_Meta_Query</code></li><li>A new “doing it wrong” notice when registering REST API endpoints</li></ul>
+
+
+
+<p>&#8230;and more!</p>
+
+
+
+<hr class="wp-block-separator" />
+
+
+
+<h2 style="text-align:left">The Squad</h2>
+
+
+
+<p>This release was led by <a href="http://ma.tt/">Matt Mullenweg</a>, along with <a href="https://pento.net/">Gary Pendergast</a> as <a href="https://core.trac.wordpress.org/changeset/42343">Senior Code Reshuffler</a> and <a href="https://core.trac.wordpress.org/changeset/43309">Poet</a>. They received wonderful assistance from the following 561 contributors for this release, 231 of whom were making their first ever contribution! Pull up some Betty Carter on your music service of choice, and check out some of their profiles:</p>
+
+
+<a href="https://profiles.wordpress.org/0x6f0/">0x6f0</a>, <a href="https://profiles.wordpress.org/1265578519-1/">1265578519</a>, <a href="https://profiles.wordpress.org/1naveengiri/">1naveengiri</a>, <a href="https://profiles.wordpress.org/360zen/">360zen</a>, <a href="https://profiles.wordpress.org/aardrian/">aardrian</a>, <a href="https://profiles.wordpress.org/jorbin/">Aaron Jorbin</a>, <a href="https://profiles.wordpress.org/abdullahramzan/">Abdullah Ramzan</a>, <a href="https://profiles.wordpress.org/abhayvishwakarma/">Abhay Vishwakarma</a>, <a href="https://profiles.wordpress.org/abhijitrakas/">Abhijit Rakas</a>, <a href="https://profiles.wordpress.org/ibachal/">Achal Jain</a>, <a href="https://profiles.wordpress.org/achbed/">achbed</a>, <a href="https://profiles.wordpress.org/adamsilverstein/">Adam Silverstein</a>, <a href="https://profiles.wordpress.org/ajitbohra/">Ajit Bohra</a>, <a href="https://profiles.wordpress.org/schlessera/">Alain Schlesser</a>, <a href="https://profiles.wordpress.org/aldavigdis/">Alda Vigd&#237;s</a>, <a href="https://profiles.wordpress.org/alejandroxlopez/">alejandroxlopez</a>, <a href="https://profiles.wordpress.org/xknown/">Alex Concha</a>, <a href="https://profiles.wordpress.org/alexstine/">Alex Stine</a>, <a href="https://profiles.wordpress.org/xyfi/">Alexander Botteram</a>, <a href="https://profiles.wordpress.org/alexvorn2/">Alexandru Vornicescu</a>, <a href="https://profiles.wordpress.org/alexgso/">alexgso</a>, <a href="https://profiles.wordpress.org/allancole/">allancole</a>, <a href="https://profiles.wordpress.org/allendav/">Allen Snook</a>, <a href="https://profiles.wordpress.org/alvarogois/">Alvaro Gois dos Santos</a>, <a href="https://profiles.wordpress.org/acirujano/">Ana Cirujano</a>, <a href="https://profiles.wordpress.org/anantajitjg/">Anantajit JG</a>, <a href="https://profiles.wordpress.org/afercia/">Andrea Fercia</a>, <a href="https://profiles.wordpress.org/andg/">Andrea Gandino</a>, <a href="https://profiles.wordpress.org/andreamiddleton/">Andrea Middleton</a>, <a href="https://profiles.wordpress.org/andrei0x309/">andrei0x309</a>, <a href="https://profiles.wordpress.org/andreiglingeanu/">andreiglingeanu</a>, <a href="https://profiles.wordpress.org/aduth/">Andrew Duthie</a>, <a href="https://profiles.wordpress.org/andrewza/">Andrew Lima</a>, <a href="https://profiles.wordpress.org/nacin/">Andrew Nacin</a>, <a href="https://profiles.wordpress.org/anevins/">Andrew Nevins</a>, <a href="https://profiles.wordpress.org/azaozz/">Andrew Ozz</a>, <a href="https://profiles.wordpress.org/rarst/">Andrey Savchenko</a>, <a href="https://profiles.wordpress.org/nosolosw/">Andrés Maneiro</a>, <a href="https://profiles.wordpress.org/afragen/">Andy Fragen</a>, <a href="https://profiles.wordpress.org/andizer/">Andy Meerwaldt</a>, <a href="https://profiles.wordpress.org/la-geek/">Angelika Reisiger</a>, <a href="https://profiles.wordpress.org/antaltettinger/">Antal Tettinger</a>, <a href="https://profiles.wordpress.org/antipole/">Antipole</a>, <a href="https://profiles.wordpress.org/atimmer/">Anton Timmermans</a>, <a href="https://profiles.wordpress.org/vanyukov/">Anton Vanyukov</a>, <a href="https://profiles.wordpress.org/avillegasn/">Antonio Villegas</a>, <a href="https://profiles.wordpress.org/antonioeatgoat/">AntonioEatGoat</a>, <a href="https://profiles.wordpress.org/aranwer104/">Anwer AR</a>, <a href="https://profiles.wordpress.org/aryamaaru/">Arun</a>, <a href="https://profiles.wordpress.org/mrasharirfan/">Ashar Irfan</a>, <a href="https://profiles.wordpress.org/ashokrd2013/">ashokrd2013</a>, <a href="https://profiles.wordpress.org/ayeshrajans/">Ayesh Karunaratne</a>, <a href="https://profiles.wordpress.org/ayubadiputra/">Ayub Adiputra</a>, <a href="https://profiles.wordpress.org/barryceelen/">Barry Ceelen</a>, <a href="https://profiles.wordpress.org/behzod/">Behzod Saidov</a>, <a href="https://profiles.wordpress.org/drywallbmb/">Ben Byrne</a>, <a href="https://profiles.wordpress.org/benhuberman/">benhuberman</a>, <a href="https://profiles.wordpress.org/benoitchantre/">Benoit Chantre</a>, <a href="https://profiles.wordpress.org/benvaassen/">benvaassen</a>, <a href="https://profiles.wordpress.org/bhargavmehta/">Bhargav Mehta</a>, <a href="https://profiles.wordpress.org/bikecrazyy/">bikecrazyy</a>, <a href="https://profiles.wordpress.org/birgire/">Birgir Erlendsson</a>, <a href="https://profiles.wordpress.org/bjornw/">BjornW</a>, <a href="https://profiles.wordpress.org/blair-jersyer/">Blair jersyer</a>, <a href="https://profiles.wordpress.org/blobfolio/">Blobfolio</a>, <a href="https://profiles.wordpress.org/bobbingwide/">bobbingwide</a>, <a href="https://profiles.wordpress.org/boblinthorst/">boblinthorst</a>, <a href="https://profiles.wordpress.org/boonebgorges/">Boone Gorges</a>, <a href="https://profiles.wordpress.org/bor0/">Boro Sitnikovski</a>, <a href="https://profiles.wordpress.org/bradparbs/">Brad Parbs</a>, <a href="https://profiles.wordpress.org/bradleyt/">Bradley Taylor</a>, <a href="https://profiles.wordpress.org/bramheijmink/">bramheijmink</a>, <a href="https://profiles.wordpress.org/kraftbj/">Brandon Kraft</a>, <a href="https://profiles.wordpress.org/bpayton/">Brandon Payton</a>, <a href="https://profiles.wordpress.org/brentswisher/">Brent Swisher</a>, <a href="https://profiles.wordpress.org/rzen/">Brian Richards</a>, <a href="https://profiles.wordpress.org/bridgetwillard/">Bridget Willard</a>, <a href="https://profiles.wordpress.org/bandonrandon/">Brooke.</a>, <a href="https://profiles.wordpress.org/bruceallen/">bruceallen</a>, <a href="https://profiles.wordpress.org/burhandodhy/">Burhan Nasir</a>, <a href="https://profiles.wordpress.org/burlingtonbytes/">Bytes.co</a>, <a href="https://profiles.wordpress.org/icaleb/">Caleb Burks</a>, <a href="https://profiles.wordpress.org/calin/">Calin Don</a>, <a href="https://profiles.wordpress.org/campusboy1987/">campusboy</a>, <a href="https://profiles.wordpress.org/poena/">Carolina Nymark</a>, <a href="https://profiles.wordpress.org/carolinegeven/">carolinegeven</a>, <a href="https://profiles.wordpress.org/ccismaru/">ccismaru</a>, <a href="https://profiles.wordpress.org/chasewg/">chasewg</a>, <a href="https://profiles.wordpress.org/chetan200891/">Chetan Prajapati</a>, <a href="https://profiles.wordpress.org/chouby/">Chouby</a>, <a href="https://profiles.wordpress.org/chrico/">ChriCo</a>, <a href="https://profiles.wordpress.org/chriscct7/">chriscct7</a>, <a href="https://profiles.wordpress.org/boda1982/">Christopher Spires</a>, <a href="https://profiles.wordpress.org/claudiu/">claudiu</a>, <a href="https://profiles.wordpress.org/cliffpaulick/">Clifford Paulick</a>, <a href="https://profiles.wordpress.org/codegrau/">codegrau</a>, <a href="https://profiles.wordpress.org/coleh/">coleh</a>, <a href="https://profiles.wordpress.org/conner_bw/">conner_bw</a>, <a href="https://profiles.wordpress.org/coreymckrill/">Corey McKrill</a>, <a href="https://profiles.wordpress.org/croce/">croce</a>, <a href="https://profiles.wordpress.org/littlebigthing/">Csaba (LittleBigThings)</a>, <a href="https://profiles.wordpress.org/clarinetlord/">Cyrus Collier</a>, <a href="https://profiles.wordpress.org/danielbachhuber/">Daniel Bachhuber</a>, <a href="https://profiles.wordpress.org/danieltj/">Daniel James</a>, <a href="https://profiles.wordpress.org/daniel-koskinen/">Daniel Koskinen</a>, <a href="https://profiles.wordpress.org/talldanwp/">Daniel Richards</a>, <a href="https://profiles.wordpress.org/mte90/">Daniele Scasciafratte</a>, <a href="https://profiles.wordpress.org/danimalbrown/">danimalbrown</a>, <a href="https://profiles.wordpress.org/dannydehaan/">Danny de Haan</a>, <a href="https://profiles.wordpress.org/dannycooper/">DannyCooper</a>, <a href="https://profiles.wordpress.org/darko-a7/">Darko A7</a>, <a href="https://profiles.wordpress.org/nerrad/">Darren Ethier</a>, <a href="https://profiles.wordpress.org/davepullig/">Dave Pullig</a>, <a href="https://profiles.wordpress.org/davidakennedy/">David A. Kennedy</a>, <a href="https://profiles.wordpress.org/davidanderson/">David Anderson</a>, <a href="https://profiles.wordpress.org/davidbinda/">David Binovec</a>, <a href="https://profiles.wordpress.org/desertsnowman/">David Cramer</a>, <a href="https://profiles.wordpress.org/dlh/">David Herrera</a>, <a href="https://profiles.wordpress.org/dglingren/">David Lingren</a>, <a href="https://profiles.wordpress.org/dshanske/">David Shanske</a>, <a href="https://profiles.wordpress.org/superdav42/">David Stone</a>, <a href="https://profiles.wordpress.org/dd32/">dd32</a>, <a href="https://profiles.wordpress.org/dekervit/">dekervit</a>, <a href="https://profiles.wordpress.org/denisco/">Denis Yanchevskiy</a>, <a href="https://profiles.wordpress.org/dmsnell/">Dennis Snell</a>, <a href="https://profiles.wordpress.org/designsimply/">designsimply</a>, <a href="https://profiles.wordpress.org/dfangstrom/">dfangstrom</a>, <a href="https://profiles.wordpress.org/dhanendran/">Dhanendran</a>, <a href="https://profiles.wordpress.org/dharm1025/">Dharmesh Patel</a>, <a href="https://profiles.wordpress.org/dhavalkasvala/">Dhaval kasavala</a>, <a href="https://profiles.wordpress.org/dhruvin/">Dhruvin</a>, <a href="https://profiles.wordpress.org/diedeexterkate/">DiedeExterkate</a>, <a href="https://profiles.wordpress.org/dschalk/">Dieter</a>, <a href="https://profiles.wordpress.org/dilipbheda/">Dilip Bheda</a>, <a href="https://profiles.wordpress.org/dingo_d/">dingo-d</a>, <a href="https://profiles.wordpress.org/dipeshkakadiya/">dipeshkakadiya</a>, <a href="https://profiles.wordpress.org/ocean90/">Dominik Schilling</a>, <a href="https://profiles.wordpress.org/donncha/">Donncha &#211; Caoimh</a>, <a href="https://profiles.wordpress.org/dontstealmyfish/">dontstealmyfish</a>, <a href="https://profiles.wordpress.org/drewapicture/">Drew Jaynes</a>, <a href="https://profiles.wordpress.org/drivingralle/">Drivingralle</a>, <a href="https://profiles.wordpress.org/dsifford/">dsifford</a>, <a href="https://profiles.wordpress.org/eamax/">eamax</a>, <a href="https://profiles.wordpress.org/edo888/">edo888</a>, <a href="https://profiles.wordpress.org/electricfeet/">ElectricFeet</a>, <a href="https://profiles.wordpress.org/iseulde/">Ella Van Durpe</a>, <a href="https://profiles.wordpress.org/edocev/">Emil Dotsev</a>, <a href="https://profiles.wordpress.org/ericlewis/">Eric Andrew Lewis</a>, <a href="https://profiles.wordpress.org/ericdaams/">Eric Daams</a>, <a href="https://profiles.wordpress.org/erich_k4wp/">Erich Munz</a>, <a href="https://profiles.wordpress.org/ethitter/">Erick Hitter</a>, <a href="https://profiles.wordpress.org/ericmeyer/">ericmeyer</a>, <a href="https://profiles.wordpress.org/etoledom/">etoledom</a>, <a href="https://profiles.wordpress.org/evansolomon/">Evan Solomon</a>, <a href="https://profiles.wordpress.org/dyrer/">Evangelos Athanasiadis</a>, <a href="https://profiles.wordpress.org/faisal03/">Faisal Alvi</a>, <a href="https://profiles.wordpress.org/felipeelia/">Felipe Elia</a>, <a href="https://profiles.wordpress.org/flixos90/">Felix Arntz</a>, <a href="https://profiles.wordpress.org/fclaussen/">Fernando Claussen</a>, <a href="https://profiles.wordpress.org/flipkeijzer/">flipkeijzer</a>, <a href="https://profiles.wordpress.org/mista-flo/">Florian TIAR</a>, <a href="https://profiles.wordpress.org/fpcsjames/">FPCSJames</a>, <a href="https://profiles.wordpress.org/frank-klein/">Frank Klein</a>, <a href="https://profiles.wordpress.org/fuchsws/">fuchsws</a>, <a href="https://profiles.wordpress.org/fullyint/">fullyint</a>, <a href="https://profiles.wordpress.org/gma992/">Gabriel Maldonado</a>, <a href="https://profiles.wordpress.org/garetharnold/">Gareth</a>, <a href="https://profiles.wordpress.org/garrett-eclipse/">Garrett Hyder</a>, <a href="https://profiles.wordpress.org/garyj/">Gary Jones</a>, <a href="https://profiles.wordpress.org/soulseekah/">Gennady Kovshenin</a>, <a href="https://profiles.wordpress.org/kloon/">Gerhard Potgieter</a>, <a href="https://profiles.wordpress.org/girishpanchal/">Girish Panchal</a>, <a href="https://profiles.wordpress.org/gm_alex/">GM_Alex</a>, <a href="https://profiles.wordpress.org/gnif/">gnif</a>, <a href="https://profiles.wordpress.org/graymouser/">graymouser</a>, <a href="https://profiles.wordpress.org/greg/">greg</a>, <a href="https://profiles.wordpress.org/gziolo/">Grzegorz Ziółkowski</a>, <a href="https://profiles.wordpress.org/guido07111975/">Guido</a>, <a href="https://profiles.wordpress.org/gutendev/">GutenDev &#124; Ⓦ ✍㊙</a>, <a href="https://profiles.wordpress.org/hafiz/">Hafiz Rahman</a>, <a href="https://profiles.wordpress.org/hailite/">Hai⚡</a>, <a href="https://profiles.wordpress.org/hansjovisyoast/">Hans-Christiaan Braun</a>, <a href="https://profiles.wordpress.org/hardeepasrani/">Hardeep Asrani</a>, <a href="https://profiles.wordpress.org/hardik-amipara/">Hardik Amipara</a>, <a href="https://profiles.wordpress.org/harsh175/">Harsh Patel</a>, <a href="https://profiles.wordpress.org/haruharuharuby/">haruharuharuby</a>, <a href="https://profiles.wordpress.org/idea15/">Heather Burns</a>, <a href="https://profiles.wordpress.org/helen/">Helen Hou-Sandi</a>, <a href="https://profiles.wordpress.org/henrywright/">Henry Wright</a>, <a href="https://profiles.wordpress.org/herregroen/">Herre Groen</a>, <a href="https://profiles.wordpress.org/hitendra-chopda/">Hitendra Chopda</a>, <a href="https://profiles.wordpress.org/ianbelanger/">Ian Belanger</a>, <a href="https://profiles.wordpress.org/iandunn/">Ian Dunn</a>, <a href="https://profiles.wordpress.org/ibantxillo/">Iban Vaquero</a>, <a href="https://profiles.wordpress.org/igmoweb/">Ignacio Cruz Moreno</a>, <a href="https://profiles.wordpress.org/igorsch/">Igor</a>, <a href="https://profiles.wordpress.org/ibenic/">Igor Benic</a>, <a href="https://profiles.wordpress.org/ionvv/">ionvv</a>, <a href="https://profiles.wordpress.org/ireneyoast/">Irene Strikkers</a>, <a href="https://profiles.wordpress.org/isabel104/">isabel104</a>, <a href="https://profiles.wordpress.org/ishitaka/">ishitaka</a>, <a href="https://profiles.wordpress.org/meatman89fs/">Ivan Mudrik</a>, <a href="https://profiles.wordpress.org/jdgrimes/">J.D. Grimes</a>, <a href="https://profiles.wordpress.org/jackreichert/">Jack Reichert</a>, <a href="https://profiles.wordpress.org/jakept/">Jacob Peattie</a>, <a href="https://profiles.wordpress.org/whyisjake/">Jake Spurlock</a>, <a href="https://profiles.wordpress.org/jnylen0/">James Nylen</a>, <a href="https://profiles.wordpress.org/janthiel/">Jan Thiel</a>, <a href="https://profiles.wordpress.org/janak007/">janak Kaneriya</a>, <a href="https://profiles.wordpress.org/janalwin/">janalwin</a>, <a href="https://profiles.wordpress.org/jankimoradiya/">Janki Moradiya</a>, <a href="https://profiles.wordpress.org/jaswrks/">Jason Caldwell</a>, <a href="https://profiles.wordpress.org/javorszky/">javorszky</a>, <a href="https://profiles.wordpress.org/jaydeep-rami/">Jaydip Rami</a>, <a href="https://profiles.wordpress.org/jaymanpandya/">Jayman Pandya</a>, <a href="https://profiles.wordpress.org/audrasjb/">Jb Audras</a>, <a href="https://profiles.wordpress.org/jfarthing84/">Jeff Farthing</a>, <a href="https://profiles.wordpress.org/cheffheid/">Jeffrey de Wit</a>, <a href="https://profiles.wordpress.org/jeffpaul/">Jeffrey Paul</a>, <a href="https://profiles.wordpress.org/jmdodd/">Jennifer M. Dodd</a>, <a href="https://profiles.wordpress.org/miss_jwo/">Jenny Wong</a>, <a href="https://profiles.wordpress.org/jeremeylduvall/">Jeremey</a>, <a href="https://profiles.wordpress.org/jeremyfelt/">Jeremy Felt</a>, <a href="https://profiles.wordpress.org/jeherve/">Jeremy Herve</a>, <a href="https://profiles.wordpress.org/jpry/">Jeremy Pry</a>, <a href="https://profiles.wordpress.org/jeremyescott/">Jeremy Scott</a>, <a href="https://profiles.wordpress.org/jesperher/">Jesper V Nielsen</a>, <a href="https://profiles.wordpress.org/professor44/">Jesse Friedman</a>, <a href="https://profiles.wordpress.org/jjcomack/">Jimmy Comack</a>, <a href="https://profiles.wordpress.org/jipmoors/">Jip Moors</a>, <a href="https://profiles.wordpress.org/jirihon/">Jiri Hon</a>, <a href="https://profiles.wordpress.org/joanrho/">joanrho</a>, <a href="https://profiles.wordpress.org/jobthomas/">Job</a>, <a href="https://profiles.wordpress.org/sephsekla/">Joe Bailey-Roberts</a>, <a href="https://profiles.wordpress.org/joedolson/">Joe Dolson</a>, <a href="https://profiles.wordpress.org/joehoyle/">Joe Hoyle</a>, <a href="https://profiles.wordpress.org/joemcgill/">Joe McGill</a>, <a href="https://profiles.wordpress.org/joelcj91/">Joel James</a>, <a href="https://profiles.wordpress.org/joen/">Joen A.</a>, <a href="https://profiles.wordpress.org/j-falk/">Johan Falk</a>, <a href="https://profiles.wordpress.org/johnbillion/">John Blackbourn</a>, <a href="https://profiles.wordpress.org/johnny5/">John Godley</a>, <a href="https://profiles.wordpress.org/johnjamesjacoby/">John James Jacoby</a>, <a href="https://profiles.wordpress.org/johnpgreen/">John P. Green</a>, <a href="https://profiles.wordpress.org/johnalarcon/">johnalarcon</a>, <a href="https://profiles.wordpress.org/johnschulz/">johnschulz</a>, <a href="https://profiles.wordpress.org/jrchamp/">Jonathan Champ</a>, <a href="https://profiles.wordpress.org/desrosj/">Jonathan Desrosiers</a>, <a href="https://profiles.wordpress.org/joneiseman/">joneiseman</a>, <a href="https://profiles.wordpress.org/spacedmonkey/">Jonny Harris</a>, <a href="https://profiles.wordpress.org/joostdevalk/">Joost de Valk</a>, <a href="https://profiles.wordpress.org/jorgefilipecosta/">Jorge Costa</a>, <a href="https://profiles.wordpress.org/josephscott/">Joseph Scott</a>, <a href="https://profiles.wordpress.org/joshuawold/">JoshuaWold</a>, <a href="https://profiles.wordpress.org/joyously/">Joy</a>, <a href="https://profiles.wordpress.org/jpurdy647/">jpurdy647</a>, <a href="https://profiles.wordpress.org/jrdelarosa/">jrdelarosa</a>, <a href="https://profiles.wordpress.org/jryancard/">jryancard</a>, <a href="https://profiles.wordpress.org/juiiee8487/">Juhi Patel</a>, <a href="https://profiles.wordpress.org/jamosova/">Julia Amosova</a>, <a href="https://profiles.wordpress.org/juliemoynat/">juliemoynat</a>, <a href="https://profiles.wordpress.org/jrf/">Juliette Reinders Folmer</a>, <a href="https://profiles.wordpress.org/junaidkbr/">Junaid Ahmed</a>, <a href="https://profiles.wordpress.org/justinsainton/">Justin Sainton</a>, <a href="https://profiles.wordpress.org/jtsternberg/">Justin Sternberg</a>, <a href="https://profiles.wordpress.org/greenshady/">Justin Tadlock</a>, <a href="https://profiles.wordpress.org/kadamwhite/">K.Adam White</a>, <a href="https://profiles.wordpress.org/kapteinbluf/">kapteinbluf</a>, <a href="https://profiles.wordpress.org/keesiemeijer/">keesiemeijer</a>, <a href="https://profiles.wordpress.org/ryelle/">Kelly Dwan</a>, <a href="https://profiles.wordpress.org/kelvink/">kelvink</a>, <a href="https://profiles.wordpress.org/khaihong/">khaihong</a>, <a href="https://profiles.wordpress.org/kiranpotphode/">Kiran Potphode</a>, <a href="https://profiles.wordpress.org/ixkaito/">Kite</a>, <a href="https://profiles.wordpress.org/kjellr/">Kjell Reigstad</a>, <a href="https://profiles.wordpress.org/kkarpieszuk/">kkarpieszuk</a>, <a href="https://profiles.wordpress.org/kmeze/">kmeze</a>, <a href="https://profiles.wordpress.org/knutsp/">Knut Sparhell</a>, <a href="https://profiles.wordpress.org/konainm/">konainm</a>, <a href="https://profiles.wordpress.org/obenland/">Konstantin Obenland</a>, <a href="https://profiles.wordpress.org/xkon/">Konstantinos Xenos</a>, <a href="https://profiles.wordpress.org/kristastevens/">kristastevens</a>, <a href="https://profiles.wordpress.org/krutidugade/">krutidugade</a>, <a href="https://profiles.wordpress.org/laghee/">laghee</a>, <a href="https://profiles.wordpress.org/lakenh/">Laken Hafner</a>, <a href="https://profiles.wordpress.org/lancewillett/">Lance Willett</a>, <a href="https://profiles.wordpress.org/laurelfulford/">laurelfulford</a>, <a href="https://profiles.wordpress.org/lbenicio/">lbenicio</a>, <a href="https://profiles.wordpress.org/leanderiversen/">Leander Iversen</a>, <a href="https://profiles.wordpress.org/leemon/">leemon</a>, <a href="https://profiles.wordpress.org/lenasterg/">lenasterg</a>, <a href="https://profiles.wordpress.org/lisannekluitmans/">Lisanne Kluitmans</a>, <a href="https://profiles.wordpress.org/lizkarkoski/">lizkarkoski</a>, <a href="https://profiles.wordpress.org/lucagrandicelli/">Luca Grandicelli</a>, <a href="https://profiles.wordpress.org/lucasrolff/">LucasRolff</a>, <a href="https://profiles.wordpress.org/luciano-croce/">luciano-croce</a>, <a href="https://profiles.wordpress.org/lukecarbis/">Luke Carbis</a>, <a href="https://profiles.wordpress.org/luminus/">Luminus</a>, <a href="https://profiles.wordpress.org/maartenleenders/">maartenleenders</a>, <a href="https://profiles.wordpress.org/macbookandrew/">macbookandrew</a>, <a href="https://profiles.wordpress.org/travel_girl/">Maja Benke</a>, <a href="https://profiles.wordpress.org/mako09/">Mako</a>, <a href="https://profiles.wordpress.org/tomdxw/">mallorydxw-old</a>, <a href="https://profiles.wordpress.org/manuelaugustin/">Manuel Augustin</a>, <a href="https://profiles.wordpress.org/manuel_84/">manuel_84</a>, <a href="https://profiles.wordpress.org/zottto/">Marc Nilius</a>, <a href="https://profiles.wordpress.org/marcelo2605/">marcelo2605</a>, <a href="https://profiles.wordpress.org/marcomartins/">Marco Martins</a>, <a href="https://profiles.wordpress.org/marcomarsala/">marco.marsala</a>, <a href="https://profiles.wordpress.org/mkaz/">Marcus Kazmierczak</a>, <a href="https://profiles.wordpress.org/marcwieland95/">marcwieland95</a>, <a href="https://profiles.wordpress.org/mariovalney/">Mario Valney</a>, <a href="https://profiles.wordpress.org/clorith/">Marius L. J.</a>, <a href="https://profiles.wordpress.org/mariusvw/">mariusvw</a>, <a href="https://profiles.wordpress.org/mbelchev/">Mariyan Belchev</a>, <a href="https://profiles.wordpress.org/markjaquith/">Mark Jaquith</a>, <a href="https://profiles.wordpress.org/iceable/">Mathieu Sarrasin</a>, <a href="https://profiles.wordpress.org/imath/">Mathieu Viet</a>, <a href="https://profiles.wordpress.org/mathieuhays/">mathieuhays</a>, <a href="https://profiles.wordpress.org/webdevmattcrom/">Matt Cromwell</a>, <a href="https://profiles.wordpress.org/mgibbs189/">Matt Gibbs</a>, <a href="https://profiles.wordpress.org/sivel/">Matt Martz</a>, <a href="https://profiles.wordpress.org/mboynes/">Matthew Boynes</a>, <a href="https://profiles.wordpress.org/lonelyvegan/">Matthew Riley MacPherson</a>, <a href="https://profiles.wordpress.org/mattyrob/">mattyrob</a>, <a href="https://profiles.wordpress.org/mcmwebsol/">mcmwebsol</a>, <a href="https://profiles.wordpress.org/melchoyce/">Mel Choyce</a>, <a href="https://profiles.wordpress.org/mensmaximus/">mensmaximus</a>, <a href="https://profiles.wordpress.org/mermel/">mermel</a>, <a href="https://profiles.wordpress.org/metalandcoffee/">metalandcoffee</a>, <a href="https://profiles.wordpress.org/wpscholar/">Micah Wood</a>, <a href="https://profiles.wordpress.org/mnelson4/">Michael Nelson</a>, <a href="https://profiles.wordpress.org/michielatyoast/">Michiel Heijmans</a>, <a href="https://profiles.wordpress.org/sebastienthivinfocom/">Migrated to @sebastienserre</a>, <a href="https://profiles.wordpress.org/mcsf/">Miguel Fonseca</a>, <a href="https://profiles.wordpress.org/mmtr86/">Miguel Torres</a>, <a href="https://profiles.wordpress.org/mihaiiceyro/">mihaiiceyro</a>, <a href="https://profiles.wordpress.org/mihdan/">mihdan</a>, <a href="https://profiles.wordpress.org/mikegillihan/">Mike Gillihan</a>, <a href="https://profiles.wordpress.org/mikejolley/">Mike Jolley</a>, <a href="https://profiles.wordpress.org/mikeschroder/">Mike Schroder</a>, <a href="https://profiles.wordpress.org/dimadin/">Milan Dinić</a>, <a href="https://profiles.wordpress.org/lanche86/">Milan Ivanovic</a>, <a href="https://profiles.wordpress.org/milana_cap/">Milana Cap</a>, <a href="https://profiles.wordpress.org/milindmore22/">Milind More</a>, <a href="https://profiles.wordpress.org/mirkoschubert/">mirkoschubert</a>, <a href="https://profiles.wordpress.org/monikarao/">Monika Rao</a>, <a href="https://profiles.wordpress.org/boemedia/">Monique Dubbelman</a>, <a href="https://profiles.wordpress.org/mt8biz/">moto hachi ( mt8.biz )</a>, <a href="https://profiles.wordpress.org/mrmadhat/">mrmadhat</a>, <a href="https://profiles.wordpress.org/xpertone/">Muhammad Kashif</a>, <a href="https://profiles.wordpress.org/mukesh27/">Mukesh Panchal</a>, <a href="https://profiles.wordpress.org/lorenzone92/">MultiformeIngegno</a>, <a href="https://profiles.wordpress.org/mmaumio/">Muntasir Mahmud</a>, <a href="https://profiles.wordpress.org/munyagu/">munyagu</a>, <a href="https://profiles.wordpress.org/mythemeshop/">MyThemeShop</a>, <a href="https://profiles.wordpress.org/mzorz/">mzorz</a>, <a href="https://profiles.wordpress.org/nadim0988/">Nadim</a>, <a href="https://profiles.wordpress.org/nandorsky/">nandorsky</a>, <a href="https://profiles.wordpress.org/naoki0h/">Naoki Ohashi</a>, <a href="https://profiles.wordpress.org/nao/">Naoko Takano</a>, <a href="https://profiles.wordpress.org/nataliashitova/">nataliashitova</a>, <a href="https://profiles.wordpress.org/nateallen/">Nate Allen</a>, <a href="https://profiles.wordpress.org/nathanatmoz/">Nathan Johnson</a>, <a href="https://profiles.wordpress.org/ndavison/">ndavison</a>, <a href="https://profiles.wordpress.org/greatislander/">Ned Zimmerman</a>, <a href="https://profiles.wordpress.org/nextendweb/">Nextendweb</a>, <a href="https://profiles.wordpress.org/ndiego/">Nick Diego</a>, <a href="https://profiles.wordpress.org/celloexpressions/">Nick Halsey</a>, <a href="https://profiles.wordpress.org/nickmomrik/">Nick Momrik</a>, <a href="https://profiles.wordpress.org/nick_thegeek/">Nick the Geek</a>, <a href="https://profiles.wordpress.org/nikeo/">Nicolas</a>, <a href="https://profiles.wordpress.org/nahuelmahe/">Nicolas Figueira</a>, <a href="https://profiles.wordpress.org/nicollle/">Nicolle Helgers</a>, <a href="https://profiles.wordpress.org/jainnidhi/">Nidhi Jain</a>, <a href="https://profiles.wordpress.org/nielslange/">Niels Lange</a>, <a href="https://profiles.wordpress.org/nikschavan/">Nikhil Chavan</a>, <a href="https://profiles.wordpress.org/rabmalin/">Nilambar Sharma</a>, <a href="https://profiles.wordpress.org/mrtortai/">Noam Eppel</a>, <a href="https://profiles.wordpress.org/notnownikki/">notnownikki</a>, <a href="https://profiles.wordpress.org/odysseygate/">odyssey</a>, <a href="https://profiles.wordpress.org/bulletdigital/">Oliver Sadler</a>, <a href="https://profiles.wordpress.org/omarreiss/">Omar Reiss</a>, <a href="https://profiles.wordpress.org/codestor/">Omkar Bhagat</a>, <a href="https://profiles.wordpress.org/ov3rfly/">Ov3rfly</a>, <a href="https://profiles.wordpress.org/paaljoachim/">Paal Joachim Romdahl</a>, <a href="https://profiles.wordpress.org/palmiak/">palmiak</a>, <a href="https://profiles.wordpress.org/panchen/">panchen</a>, <a href="https://profiles.wordpress.org/parbaugh/">parbaugh</a>, <a href="https://profiles.wordpress.org/xparham/">Parham Ghaffarian</a>, <a href="https://profiles.wordpress.org/swissspidy/">Pascal Birchler</a>, <a href="https://profiles.wordpress.org/casiepa/">Pascal Casier</a>, <a href="https://profiles.wordpress.org/eartboard/">Paul</a>, <a href="https://profiles.wordpress.org/pbearne/">Paul Bearne</a>, <a href="https://profiles.wordpress.org/pbiron/">Paul Biron</a>, <a href="https://profiles.wordpress.org/natacado/">Paul Paradise</a>, <a href="https://profiles.wordpress.org/paulschreiber/">Paul Schreiber</a>, <a href="https://profiles.wordpress.org/pputzer/">pepe</a>, <a href="https://profiles.wordpress.org/piewp/">Perdaan</a>, <a href="https://profiles.wordpress.org/peterwilsoncc/">Peter Wilson</a>, <a href="https://profiles.wordpress.org/walbo/">Petter Walb&#248; Johnsg&#229;rd</a>, <a href="https://profiles.wordpress.org/munklefish/">Phill Healey</a>, <a href="https://profiles.wordpress.org/pskli/">Pierre Sa&#239;kali</a>, <a href="https://profiles.wordpress.org/wizzard_/">Pieter Daalder</a>, <a href="https://profiles.wordpress.org/piyush9100/">Piyush Patel</a>, <a href="https://profiles.wordpress.org/promz/">Pramod Jodhani</a>, <a href="https://profiles.wordpress.org/pmbaldha/">Prashant Baldha</a>, <a href="https://profiles.wordpress.org/pratikthink/">Pratik</a>, <a href="https://profiles.wordpress.org/pratikkry/">Pratik K. Yadav</a>, <a href="https://profiles.wordpress.org/precies/">precies</a>, <a href="https://profiles.wordpress.org/presskopp/">Presskopp</a>, <a href="https://profiles.wordpress.org/presslabs/">Presslabs</a>, <a href="https://profiles.wordpress.org/presstigers/">PressTigers</a>, <a href="https://profiles.wordpress.org/programmin/">programmin</a>, <a href="https://profiles.wordpress.org/punit5658/">Punit Patel</a>, <a href="https://profiles.wordpress.org/purnendu/">Purnendu Dash</a>, <a href="https://profiles.wordpress.org/qcmiao/">Qucheng</a>, <a href="https://profiles.wordpress.org/rachelbaker/">Rachel Baker</a>, <a href="https://profiles.wordpress.org/bamadesigner/">Rachel Cherry</a>, <a href="https://profiles.wordpress.org/larrach/">Rachel Peter</a>, <a href="https://profiles.wordpress.org/rafsuntaskin/">Rafsun Chowdhury</a>, <a href="https://profiles.wordpress.org/rahulsprajapati/">Rahul Prajapati</a>, <a href="https://profiles.wordpress.org/cthreelabs/">Raja Mohammed</a>, <a href="https://profiles.wordpress.org/superpoincare/">Ramanan</a>, <a href="https://profiles.wordpress.org/ramiy/">Rami Yushuvaev</a>, <a href="https://profiles.wordpress.org/ramizmanked/">Ramiz Manked</a>, <a href="https://profiles.wordpress.org/ramonopoly/">ramonopoly</a>, <a href="https://profiles.wordpress.org/ravanh/">RavanH</a>, <a href="https://profiles.wordpress.org/redcastor/">redcastor</a>, <a href="https://profiles.wordpress.org/remyvv/">remyvv</a>, <a href="https://profiles.wordpress.org/rensw90/">rensw90</a>, <a href="https://profiles.wordpress.org/rhetorical/">rhetorical</a>, <a href="https://profiles.wordpress.org/youknowriad/">Riad Benguella</a>, <a href="https://profiles.wordpress.org/rianrietveld/">Rian Rietveld</a>, <a href="https://profiles.wordpress.org/iamfriendly/">Richard Tape</a>, <a href="https://profiles.wordpress.org/rickalee/">Ricky Lee Whittemore</a>, <a href="https://profiles.wordpress.org/rinkuyadav999/">Rinku Y</a>, <a href="https://profiles.wordpress.org/rishishah/">Rishi Shah</a>, <a href="https://profiles.wordpress.org/robbie505/">Robbie</a>, <a href="https://profiles.wordpress.org/robdxw/">robdxw</a>, <a href="https://profiles.wordpress.org/noisysocks/">Robert Anderson</a>, <a href="https://profiles.wordpress.org/littlerchicken/">Robin Cornett</a>, <a href="https://profiles.wordpress.org/robinvandervliet/">Robin van der Vliet</a>, <a href="https://profiles.wordpress.org/rmccue/">Ryan McCue</a>, <a href="https://profiles.wordpress.org/othellobloke/">Ryan Paul</a>, <a href="https://profiles.wordpress.org/welcher/">Ryan Welcher</a>, <a href="https://profiles.wordpress.org/ryotsun/">ryotsun</a>, <a href="https://profiles.wordpress.org/sebastienserre/">S&#233;bastien SERRE</a>, <a href="https://profiles.wordpress.org/soean/">S&#246;ren Wrede</a>, <a href="https://profiles.wordpress.org/stodorovic/">Sa&#353;a</a>, <a href="https://profiles.wordpress.org/sagarnasit/">Sagar Nasit</a>, <a href="https://profiles.wordpress.org/sasiddiqui/">Sami Ahmed Siddiqui</a>, <a href="https://profiles.wordpress.org/samikeijonen/">Sami Keijonen</a>, <a href="https://profiles.wordpress.org/otto42/">Samuel Wood (Otto)</a>, <a href="https://profiles.wordpress.org/tinkerbelly/">sarah semark</a>, <a href="https://profiles.wordpress.org/sayedwp/">Sayed Taqui</a>, <a href="https://profiles.wordpress.org/scottlee/">Scott Lee</a>, <a href="https://profiles.wordpress.org/coffee2code/">Scott Reilly</a>, <a href="https://profiles.wordpress.org/seanchayes/">Sean Hayes</a>, <a href="https://profiles.wordpress.org/sebakurzyn/">Sebastian Kurzynoswki</a>, <a href="https://profiles.wordpress.org/sebastianpisula/">Sebastian Pisula</a>, <a href="https://profiles.wordpress.org/sergeybiryukov/">Sergey Biryukov</a>, <a href="https://profiles.wordpress.org/shamim51/">Shamim Hasan</a>, <a href="https://profiles.wordpress.org/shaneeckert/">Shane Eckert</a>, <a href="https://profiles.wordpress.org/sharaz/">Sharaz Shahid</a>, <a href="https://profiles.wordpress.org/shashwatmittal/">Shashwat</a>, <a href="https://profiles.wordpress.org/shooper/">Shawn Hooper</a>, <a href="https://profiles.wordpress.org/sherwood/">sherwood</a>, <a href="https://profiles.wordpress.org/shital-patel/">Shital Marakana</a>, <a href="https://profiles.wordpress.org/shivapoudel/">Shiva Poudel</a>, <a href="https://profiles.wordpress.org/pross/">Simon Prosser</a>, <a href="https://profiles.wordpress.org/sjardo/">sjardo</a>, <a href="https://profiles.wordpress.org/skoldin/">skoldin</a>, <a href="https://profiles.wordpress.org/slilley/">slilley</a>, <a href="https://profiles.wordpress.org/slushman/">slushman</a>, <a href="https://profiles.wordpress.org/sonjaleix/">Sonja Leix</a>, <a href="https://profiles.wordpress.org/sonjanyc/">sonjanyc</a>, <a href="https://profiles.wordpress.org/spartank/">spartank</a>, <a href="https://profiles.wordpress.org/spyderbytes/">spyderbytes</a>, <a href="https://profiles.wordpress.org/sstoqnov/">Stanimir Stoyanov</a>, <a href="https://profiles.wordpress.org/metodiew/">Stanko Metodiev</a>, <a href="https://profiles.wordpress.org/stazdotio/">stazdotio</a>, <a href="https://profiles.wordpress.org/netweb/">Stephen Edgar</a>, <a href="https://profiles.wordpress.org/stephenharris/">Stephen Harris</a>, <a href="https://profiles.wordpress.org/stevenlinx/">stevenlinx</a>, <a href="https://profiles.wordpress.org/stormrockwell/">Storm Rockwell</a>, <a href="https://profiles.wordpress.org/skostadinov/">Stoyan Kostadinov</a>, <a href="https://profiles.wordpress.org/strategio/">strategio</a>, <a href="https://profiles.wordpress.org/subrataemfluence/">Subrata Sarkar</a>, <a href="https://profiles.wordpress.org/manikmist09/">Sultan Nasir Uddin</a>, <a href="https://profiles.wordpress.org/swift/">swift</a>, <a href="https://profiles.wordpress.org/takahashi_fumiki/">Takahashi Fumiki</a>, <a href="https://profiles.wordpress.org/miyauchi/">Takayuki Miyauchi</a>, <a href="https://profiles.wordpress.org/karmatosed/">Tammie Lister</a>, <a href="https://profiles.wordpress.org/tlovett1/">Taylor Lovett</a>, <a href="https://profiles.wordpress.org/teddytime/">teddytime</a>, <a href="https://profiles.wordpress.org/tellyworth/">Tellyworth</a>, <a href="https://profiles.wordpress.org/terriann/">Terri Ann</a>, <a href="https://profiles.wordpress.org/terwdan/">terwdan</a>, <a href="https://profiles.wordpress.org/tharsheblows/">tharsheblows</a>, <a href="https://profiles.wordpress.org/themezee/">ThemeZee</a>, <a href="https://profiles.wordpress.org/thomasplevy/">Thomas Patrick Levy</a>, <a href="https://profiles.wordpress.org/thomas-vitale/">Thomas Vitale</a>, <a href="https://profiles.wordpress.org/thomaswm/">thomaswm</a>, <a href="https://profiles.wordpress.org/tfrommen/">Thorsten Frommen</a>, <a href="https://profiles.wordpress.org/thrijith/">Thrijith Thankachan</a>, <a href="https://profiles.wordpress.org/tiagohillebrandt/">Tiago Hillebrandt</a>, <a href="https://profiles.wordpress.org/tigertech/">tigertech</a>, <a href="https://profiles.wordpress.org/timhavinga/">Tim Havinga</a>, <a href="https://profiles.wordpress.org/hedgefield/">Tim Hengeveld</a>, <a href="https://profiles.wordpress.org/timmydcrawford/">Timmy Crawford</a>, <a href="https://profiles.wordpress.org/timothyblynjacobs/">Timothy Jacobs</a>, <a href="https://profiles.wordpress.org/titodevera/">titodevera</a>, <a href="https://profiles.wordpress.org/tkama/">Tkama</a>, <a href="https://profiles.wordpress.org/tz-media/">Tobias Zimpel</a>, <a href="https://profiles.wordpress.org/tobifjellner/">tobifjellner (Tor-Bjorn Fjellner)</a>, <a href="https://profiles.wordpress.org/tjnowell/">Tom J Nowell</a>, <a href="https://profiles.wordpress.org/tomharrigan/">TomHarrigan</a>, <a href="https://profiles.wordpress.org/tferry/">Tommy Ferry</a>, <a href="https://profiles.wordpress.org/tonybogdanov/">tonybogdanov</a>, <a href="https://profiles.wordpress.org/torontodigits/">TorontoDigits</a>, <a href="https://profiles.wordpress.org/mirucon/">Toshihiro Kanai</a>, <a href="https://profiles.wordpress.org/itowhid06/">Towhidul Islam</a>, <a href="https://profiles.wordpress.org/transl8or/">transl8or</a>, <a href="https://profiles.wordpress.org/grapplerulrich/">Ulrich</a>, <a href="https://profiles.wordpress.org/upadalavipul/">upadalavipul</a>, <a href="https://profiles.wordpress.org/usmankhalid/">Usman Khalid</a>, <a href="https://profiles.wordpress.org/utsav72640/">Utsav tilava</a>, <a href="https://profiles.wordpress.org/uttam007/">uttam007</a>, <a href="https://profiles.wordpress.org/vaishalipanchal/">Vaishali Panchal</a>, <a href="https://profiles.wordpress.org/valer1e/">Val&#233;rie Galassi</a>, <a href="https://profiles.wordpress.org/valchovski/">valchovski</a>, <a href="https://profiles.wordpress.org/vishaldodiya/">vishaldodiya</a>, <a href="https://profiles.wordpress.org/vnsavage/">vnsavage</a>, <a href="https://profiles.wordpress.org/voneff/">voneff</a>, <a href="https://profiles.wordpress.org/vortfu/">vortfu</a>, <a href="https://profiles.wordpress.org/warmlaundry/">warmlaundry</a>, <a href="https://profiles.wordpress.org/wbrubaker/">wbrubaker</a>, <a href="https://profiles.wordpress.org/westonruter/">Weston Ruter</a>, <a href="https://profiles.wordpress.org/kwonye/">Will Kwon</a>, <a href="https://profiles.wordpress.org/earnjam/">William Earnhardt</a>, <a href="https://profiles.wordpress.org/williampatton/">williampatton</a>, <a href="https://profiles.wordpress.org/wpzinc/">wpzinc</a>, <a href="https://profiles.wordpress.org/xhezairi/">xhezairi</a>, <a href="https://profiles.wordpress.org/yahil/">Yahil Madakiya</a>, <a href="https://profiles.wordpress.org/yoavf/">Yoav Farhi</a>, <a href="https://profiles.wordpress.org/fierevere/">Yui</a>, <a href="https://profiles.wordpress.org/yuriv/">YuriV</a>, <a href="https://profiles.wordpress.org/zanematthew/">Zane Matthew</a>, and <a href="https://profiles.wordpress.org/zebulan/">Zebulan Stanphill</a>.
+
+
+
+<p>Finally, thanks to all the community translators who worked on WordPress 5.1. Their efforts bring WordPress 5.1 fully translated to 34 languages at release time, with more on the way.</p>
+
+
+
+<p>If you want to follow along or help out, check out <a href="https://make.wordpress.org/">Make WordPress</a> and our <a href="https://make.wordpress.org/core/">core development blog</a>.</p>
+
+
+
+<p>Thanks for choosing WordPress!</p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-6589" class="share-twitter sd-button share-icon" href="https://wordpress.org/news/2019/02/betty/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-6589" class="share-facebook sd-button share-icon" href="https://wordpress.org/news/2019/02/betty/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon" href="https://wordpress.org/news/2019/02/betty/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div>
+                    <nav class="post-navigation">
+                                                                        <a href="post/the-month-in-wordpress-february-2019.html" class="float-left" rel="prev">Previous post</a>
+                                                                        <a href="post/wordpress-5-1-rc2.html" class="float-right" rel="next">Next post</a>
+                                            </nav>
+                </article>
+                            </div>
+            <div class="col-12 col-lg-3">
+                <div class="sidebar sticky-top pt-3">
+    <h4 class="title">Últimas matérias</h4>
+    <nav>
+                <a href="post/wordpress-5-5-beta-3.html" class="post-media">
+                        <p>WordPress 5.5 Beta 3</p>
+        </a>
+                <a href="post/wordpress-5-5-beta-2.html" class="post-media">
+                        <p>WordPress 5.5 Beta 2</p>
+        </a>
+                <a href="post/wordpress-5-5-beta-1.html" class="post-media">
+                        <p>WordPress 5.5 Beta 1</p>
+        </a>
+                <a href="post/the-month-in-wordpress-june-2020.html" class="post-media">
+                        <p>The Month in WordPress: June 2020</p>
+        </a>
+                <a href="post/wordpress-5-4-2-security-and-maintenance-release.html" class="post-media">
+                        <p>WordPress 5.4.2 Security and Maintenance Release</p>
+        </a>
+                <a href="post/equity-and-the-power-of-community.html" class="post-media">
+                        <p>Equity and the Power of Community</p>
+        </a>
+                <a href="post/the-month-in-wordpress-may-2020.html" class="post-media">
+                        <p>The Month in WordPress: May 2020</p>
+        </a>
+            </nav>
+</div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="bg-secondary text-white pt-4 pb-3">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <h5>Lorem ipsum dolor sit amet</h5>
+                <nav class="nav flex-column">
+                    <a href="#" class="text-reset">Consectetuer.</a>
+                    <a href="#" class="text-reset">Aliquam tincidunt mauris.</a>
+                    <a href="#" class="text-reset">Vestibulum auctor.</a>
+                    <a href="#" class="text-reset">Nunc dignissim risus.</a>
+                    <a href="#" class="text-reset">Cras ornare.</a>
+                </nav>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 mb-4">
+                <h5>Vivamus vestibulum ntulla nec ante</h5>
+                <nav class="nav flex-column">
+                    <a href="#" class="text-reset">Praesent placerat risus.</a>
+                    <a href="#" class="text-reset">Fusce pellentesque.</a>
+                    <a href="#" class="text-reset">Integer vitae libero ac risus.</a>
+                    <a href="#" class="text-reset">Vestibulum commodo felis.</a>
+                    <a href="#" class="text-reset">Ut aliquam.</a>
+                    <a href="#" class="text-reset">Cras iaculis.</a>
+                    <a href="#" class="text-reset">Donec quis dui at dolor.</a>
+                </nav>
+            </div>
+            <div class="col-12 col-md-6 mb-4">
+                <h5>Contact</h5>
+                <nav class="nav flex-column">
+                    <span>+00 (00)&nbsp;0000-0000</span>
+                    <a href="#" class="text-reset">pedrosancao@users.noreply.github.com</a>
+                </nav>
+            </div>
+        </div>
+        <p class="text-center copy">&copy Wordpress static site generator</p>
+    </div>
+</footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+        </body>
+</html>
