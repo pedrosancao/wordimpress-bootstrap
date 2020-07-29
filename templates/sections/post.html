@@ -3,6 +3,13 @@
         <div class="row">
             <div class="col-12 col-lg-9 posts">
                 <article>
+                    <div class="alert alert-info" role="alert">
+                        <p class="mb-0">
+                            <strong>Note:</strong>
+                            This content is a static page of the original post available on 
+                            <a href="{{ origin }}/{{ post.date | format_date(pattern='Y/MM') }}/{{ post.slug }}/" rel="noopener">{{ origin }}/{{ post.date | format_date(pattern='Y/MM') }}/{{ post.slug }}/</a>.
+                        </p>
+                    </div>
                     <h2>{{ post.title }}</h2>
                     {% if attribute(media, post.post_media) is defined %}
                     <picture class="post-media">

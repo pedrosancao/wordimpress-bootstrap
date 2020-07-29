@@ -1,6 +1,12 @@
 <section class="blog bg-dar">
     <div class="container pt-3">
         <h2>Posts</h2>
+        <div class="alert alert-info" role="alert">
+            <p class="mb-0">
+                <strong>Note:</strong>
+                This is a static page of the content from <a href="{{ origin }}" rel="noopener">{{ origin }}</a>.
+            </p>
+        </div>
         {% block blog_content %}
         <div class="row">
             {% for post in posts | slice(0, 2) %}

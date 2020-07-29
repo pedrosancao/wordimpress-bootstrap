@@ -75,10 +75,11 @@ class Site implements
     public function beforeGenerate(Generator $generator): void
     {
         $generator->addTemplateValues([
-            'locale' =>  $_ENV['LOCALE'],
-            'base'   =>  $_ENV['BASE_URL'],
-            'title'  =>  $_ENV['TITLE'],
-            'fb_app' =>  $_ENV['FACEBOOK_APP_ID'],
+            'locale' => $_ENV['LOCALE'],
+            'base'   => $_ENV['BASE_URL'],
+            'title'  => $_ENV['TITLE'],
+            'origin' => $_ENV['WORDPRESS'],
+            'fb_app' => $_ENV['FACEBOOK_APP_ID'],
         ]);
     }
 

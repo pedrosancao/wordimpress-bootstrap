@@ -3,6 +3,12 @@
         <div class="row">
             <div class="col-12 col-lg-9 posts">
                 <h2>Post on {{ category.name }} category</h2>
+                <div class="alert alert-info" role="alert">
+                    <p class="mb-0">
+                        <strong>Note:</strong>
+                        This is a static page of the content from <a href="{{ origin }}" rel="noopener">{{ origin }}</a>.
+                    </p>
+                </div>
                 {% for post in categoryPosts %}
                 <article class="mb-5">
                     <a href="post/{{ post.slug }}.html" class="post-media">
