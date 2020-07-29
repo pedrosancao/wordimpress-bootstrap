@@ -1,6 +1,8 @@
 # Wordpress static site generator
 
-Static site generator using Wordpress API as content source. The project still a proof of concept.
+Bootstrap template for static site generator using Wordpress API as content source. The project
+still a proof of concept.
+
 This implementation retrieves content from [wordpress.org/news](https://wordpress.org/news).
 
 ## Key features
@@ -24,7 +26,6 @@ The parameter `-m` add compression (currently only Sass has support).
 
 ## To do list
 
-The following tasks are my current priorities:
+Tasks prioritized are updated on the library [pedrosancao/wordpress-static-generator][0] project.
 
-- 🔝 Convert procedural code to OOP;
-- Add paginations for all posts and category posts;
+[0]: https://github.com/pedrosancao/wordpress-static-generator/
