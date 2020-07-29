@@ -6,9 +6,9 @@
             {% for post in posts | slice(0, 2) %}
             <article class="col-12 col-md-6 col-lg-{{ loop.index0 ? 5 : 7 }} mb-5 ">
                 <div class="shadow p-3 bg-white rounded">
-                    {% if post.post_media is defined %}
+                    {% if attribute(media, post.post_media) is defined %}
                     <a href="post/{{ post.slug }}.html">
-                        <img src="{{ post.post_media.medium }}" alt="{{ post.post_media_alt }}">
+                        <img src="{{ attribute(media, post.post_media).sizes.medium }}" alt="{{ attribute(media, post.post_media).alt }}" loading="lazy">
                     </a>
                     {% endif %}
                     <a href="post/{{ post.slug }}.html">

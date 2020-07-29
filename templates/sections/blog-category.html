@@ -6,7 +6,7 @@
                 {% for post in categoryPosts %}
                 <article class="mb-5">
                     <a href="post/{{ post.slug }}.html" class="post-media">
-                        <img src="{{ post.post_media.large }}" alt="{{ post.post_media_alt }}" loading="lazy">
+                        <img src="{{ attribute(media, post.post_media).sizes.large }}" alt="{{ attribute(media, post.post_media).alt }}" loading="lazy">
                     </a>
                     <a href="post/{{ post.slug }}.html">
                         <h3>{{ post.title }}</h3>

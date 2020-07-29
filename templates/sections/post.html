@@ -4,10 +4,11 @@
             <div class="col-12 col-lg-9 posts">
                 <article>
                     <h2>{{ post.title }}</h2>
-                    {{ index }}
+                    {% if attribute(media, post.post_media) is defined %}
                     <picture class="post-media">
-                        <img src="{{ post.post_media.large }}" alt="{{ post.post_media_alt }}" loading="lazy">
+                        <img src="{{ attribute(media, post.post_media).sizes.large }}" alt="{{ attribute(media, post.post_media).alt }}" loading="lazy">
                     </picture>
+                    {% endif %}
                     <div class="meta my-2">
                         By {{ attribute(authors, post.author) }} |
                         {{ post.date | format_date(locale=locale) }} |
