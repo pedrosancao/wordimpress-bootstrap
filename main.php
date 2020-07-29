@@ -15,6 +15,6 @@ $dotenv = new \Symfony\Component\Dotenv\Dotenv();
 $dotenv->load(__DIR__ . '/.env' . (file_exists('./.env') ? '' : '.example'));
 
 $site = new Site;
-$generator = new PedroSancao\Wpsg\Generator($site);
+$generator = new PedroSancao\Wordimpress\Generator($site);
 $generator->prepare();
 $generator->generate();

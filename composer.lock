@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5967defda1c32614a1347fff20fb4b9f",
+    "content-hash": "2ccc991fcef8d94071b822b85d4c8816",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -53,17 +53,17 @@
             "time": "2019-12-30T22:54:17+00:00"
         },
         {
-            "name": "pedrosancao/wordpress-static-generator",
+            "name": "pedrosancao/wordimpress",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/pedrosancao/wordpress-static-generator.git",
-                "reference": "c62e97bd352cbee9e2b81d437c446e9a69ec50dc"
+                "url": "https://github.com/pedrosancao/wordimpress.git",
+                "reference": "2e631884a5fd89fdeee174bed12a487506b8fd02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pedrosancao/wordpress-static-generator/zipball/c62e97bd352cbee9e2b81d437c446e9a69ec50dc",
-                "reference": "c62e97bd352cbee9e2b81d437c446e9a69ec50dc",
+                "url": "https://api.github.com/repos/pedrosancao/wordimpress/zipball/2e631884a5fd89fdeee174bed12a487506b8fd02",
+                "reference": "2e631884a5fd89fdeee174bed12a487506b8fd02",
                 "shasum": ""
             },
             "require": {
@@ -78,7 +78,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "PedroSancao\\Wpsg\\": "src/"
+                    "PedroSancao\\Wordimpress\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -99,7 +99,7 @@
                 "wordpress-rest",
                 "wp-json"
             ],
-            "time": "2020-07-29T19:56:04+00:00"
+            "time": "2020-07-29T23:10:34+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -936,7 +936,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "pedrosancao/wordpress-static-generator": 20
+        "pedrosancao/wordimpress": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

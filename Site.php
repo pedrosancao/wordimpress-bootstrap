@@ -1,18 +1,18 @@
 <?php
 
-use PedroSancao\Wpsg\Contracts\ImportImagesInterface;
-use PedroSancao\Wpsg\Contracts\SiteInterface;
-use PedroSancao\Wpsg\Contracts\WithAuthorsInterface;
-use PedroSancao\Wpsg\Contracts\WithCategoriesInterface;
-use PedroSancao\Wpsg\Contracts\WithMediaInterface;
-use PedroSancao\Wpsg\Contracts\WithPagesInterface;
-use PedroSancao\Wpsg\Contracts\WithPostsInterface;
-use PedroSancao\Wpsg\BlogData\HasAuthorsTrait;
-use PedroSancao\Wpsg\BlogData\HasCategoriesTrait;
-use PedroSancao\Wpsg\BlogData\HasMediaTrait;
-use PedroSancao\Wpsg\BlogData\HasPagesTrait;
-use PedroSancao\Wpsg\BlogData\HasPostsTrait;
-use PedroSancao\Wpsg\Generator;
+use PedroSancao\Wordimpress\Contracts\ImportImagesInterface;
+use PedroSancao\Wordimpress\Contracts\SiteInterface;
+use PedroSancao\Wordimpress\Contracts\WithAuthorsInterface;
+use PedroSancao\Wordimpress\Contracts\WithCategoriesInterface;
+use PedroSancao\Wordimpress\Contracts\WithMediaInterface;
+use PedroSancao\Wordimpress\Contracts\WithPagesInterface;
+use PedroSancao\Wordimpress\Contracts\WithPostsInterface;
+use PedroSancao\Wordimpress\BlogData\HasAuthorsTrait;
+use PedroSancao\Wordimpress\BlogData\HasCategoriesTrait;
+use PedroSancao\Wordimpress\BlogData\HasMediaTrait;
+use PedroSancao\Wordimpress\BlogData\HasPagesTrait;
+use PedroSancao\Wordimpress\BlogData\HasPostsTrait;
+use PedroSancao\Wordimpress\Generator;
 
 class Site implements
     ImportImagesInterface,

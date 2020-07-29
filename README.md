@@ -1,9 +1,9 @@
-# Wordpress static site generator
+# Wordimpress Bootstrap template
 
-Bootstrap template for static site generator using Wordpress API as content source. The project
-still a proof of concept.
+Bootstrap template for Wordimpress, a static site generator using Wordpress API as content source.
+The project still a prototype.
 
-This implementation retrieves content from [wordpress.org/news](https://wordpress.org/news).
+This implementation retrieves content from [https://wordpress.org/news](https://wordpress.org/news).
 
 ## Key features
 
@@ -26,6 +26,6 @@ The parameter `-m` add compression (currently only Sass has support).
 
 ## To do list
 
-Tasks prioritized are updated on the library [pedrosancao/wordpress-static-generator][0] project.
+Tasks prioritized are updated on the library [pedrosancao/wordimpress][0] project.
 
-[0]: https://github.com/pedrosancao/wordpress-static-generator/
+[0]: https://github.com/pedrosancao/wordimpress/
