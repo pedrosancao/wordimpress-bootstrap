@@ -48,9 +48,10 @@ The project still a prototype.</p>
 </ul>
 <h2>Usage</h2>
 <p>Copy &quot;.env.example&quot; to &quot;.env&quot; and adjust the properties.</p>
-<p>To compile templates, Sass and copy media once run <code>php compile.php</code>.</p>
-<p>To compile then watch for changes add <code>-w</code> parameter: <code>php compile.php -w</code>.</p>
-<p>The parameter <code>-m</code> add compression (currently only Sass has support).</p>
+<p>Install composer packages: <code>composer install</code>.</p>
+<p>To compile templates, Sass and copy media once run <code>composer run-script compile</code>
+and to keep watching for changes <code>composer run-script watch</code>.</p>
+<p>To compile all minifying the generated CSS use <code>composer run-script prod</code>.</p>
 <h2>To do list</h2>
 <p>Tasks prioritized are updated on the library <a href="https://github.com/pedrosancao/wordimpress/">pedrosancao/wordimpress</a> project.</p>
                 </div>
