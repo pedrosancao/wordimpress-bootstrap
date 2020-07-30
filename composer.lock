@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ccc991fcef8d94071b822b85d4c8816",
+    "content-hash": "10ce72026e362415bf530c68001b882f",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -58,12 +58,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pedrosancao/wordimpress.git",
-                "reference": "2e631884a5fd89fdeee174bed12a487506b8fd02"
+                "reference": "275eeaa74e3dcd8abacfecdf9747a2c8e10a85bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pedrosancao/wordimpress/zipball/2e631884a5fd89fdeee174bed12a487506b8fd02",
-                "reference": "2e631884a5fd89fdeee174bed12a487506b8fd02",
+                "url": "https://api.github.com/repos/pedrosancao/wordimpress/zipball/275eeaa74e3dcd8abacfecdf9747a2c8e10a85bf",
+                "reference": "275eeaa74e3dcd8abacfecdf9747a2c8e10a85bf",
                 "shasum": ""
             },
             "require": {
@@ -75,6 +75,10 @@
                 "twig/markdown-extra": "^3.0",
                 "twig/twig": "^3.0"
             },
+            "bin": [
+                "bin/wordimpress-generate",
+                "bin/wordimpress-run"
+            ],
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -99,7 +103,7 @@
                 "wordpress-rest",
                 "wp-json"
             ],
-            "time": "2020-07-29T23:10:34+00:00"
+            "time": "2020-07-30T17:52:05+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",

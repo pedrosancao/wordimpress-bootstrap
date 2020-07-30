@@ -10,9 +10,19 @@
             "email": "pedrosancao@users.noreply.github.com"
         }
     ],
+    "scripts": {
+        "compile": "vendor/bin/wordimpress-run Site",
+        "watch": "vendor/bin/wordimpress-run -w Site",
+        "prod": "vendor/bin/wordimpress-run -p Site"
+    },
+    "autoload": {
+        "psr-4": {
+            "": "sites/"
+        }
+    },
     "require": {
         "twbs/bootstrap": "^4.5",
         "symfony/dotenv": "^5.1",
-        "pedrosancao/wordimpress": "dev-master"
+        "pedrosancao/wordimpress": "dev-master#275eeaa74e3dcd8abacfecdf9747a2c8e10a85bf"
     }
 }

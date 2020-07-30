@@ -18,11 +18,12 @@ This implementation retrieves content from [https://wordpress.org/news](https://
 
 Copy ".env.example" to ".env" and adjust the properties.
 
-To compile templates, Sass and copy media once run `php compile.php`.
+Install composer packages: `composer install`.
 
-To compile then watch for changes add `-w` parameter: `php compile.php -w`.
+To compile templates, Sass and copy media once run `composer run-script compile`
+and to keep watching for changes `composer run-script watch`.
 
-The parameter `-m` add compression (currently only Sass has support).
+To compile all minifying the generated CSS use `composer run-script prod`.
 
 ## To do list
 
