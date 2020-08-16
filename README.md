@@ -5,6 +5,11 @@ The project still a prototype.
 
 This implementation retrieves content from [https://wordpress.org/news](https://wordpress.org/news).
 
+## Black lives matter
+
+**This repository has no master**. Read more:
+[GitHub abandons 'master' term to avoid slavery row][master-replace].
+
 ## Key features
 
 - uses Twig as template engine
@@ -30,3 +35,4 @@ To compile all minifying the generated CSS use `composer run-script prod`.
 Tasks prioritized are updated on the library [pedrosancao/wordimpress][0] project.
 
 [0]: https://github.com/pedrosancao/wordimpress/
+[master-replace]: https://www.bbc.com/news/technology-53050955
